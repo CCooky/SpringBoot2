@@ -515,7 +515,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
   <img src="images/image-20220505185222864.png" alt="image-20220505185222864" style="zoom: 80%;" />
 
-- 一般的MVC普通参数，如**localhost:80/msgs?phone=139&mycode=123456**————@RequestParam；
+- 一般的MVC普通参数，如**localhost:80/msgs?phone=139&mycode=123456**————@RequestParam；(假如参数名字与接受参数名字一样就会自动注入，不用加这个注解)
 
   ```java
       @PostMapping
@@ -3122,7 +3122,7 @@ public class WebTest {
 }
 ```
 
-运行该test1后结果如下：
+运行该test1后结果如下：**成功的时候，什么信息都不会有！！！！**
 
 执行测试程序，现在就可以正常的发送/books对应的请求了，注意访问路径不要写http://localhost:8080/books，因为前面的服务器IP地址和端口使用的是当前虚拟的web环境，无需指定，仅指定请求的具体路径即可。
 
