@@ -6278,19 +6278,160 @@ public class MessageListener {
 
 3. 企业开发时通常使用监听器来处理消息队列中的消息，设置监听器使用注解@KafkaListener。接收消息保存在形参ConsumerRecord对象中
 
+# SpringBoot+MySql+TDengine
+
+**1、pom文件**
+
+重点是导入两个数据库的JDBC链接依赖taos-jdbcdriver与mysql-connector-java
+
+```xml
+        <dependency>
+            <groupId>com.taosdata.jdbc</groupId>
+            <artifactId>taos-jdbcdriver</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+```
+
+**2、application.yml配置：**
+
+注意：连接池hikari配置不能形如下面配置，否则连接池配置不起作用：
+
+<img src="images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NjA4OTIx,size_16,color_FFFFFF,t_70.png" alt="img" style="zoom:67%;" />
+
+```yml
+server:
+  port: 3001
+
+spring:
+  datasource:
+    tdengine-server:
+      jdbc-url: jdbc:TAOS://192.168.113.128:6030
+      username: root
+      password: taosdata
+      type: com.zaxxer.hikari.HikariDataSource      # Hikari连接池的设置
+      hikari:
+        minimum-idle: 5                 #最小连接
+        maximum-pool-size: 15        #最大连接
+        auto-commit: true        #自动提交
+        idle-timeout: 30000        #最大空闲时常
+        pool-name: DatebookHikariCP        #连接池名
+        max-lifetime: 1800000        #最大生命周期
+        connection-timeout: 30000        #连接超时时间
+        connection-test-query: SELECT 1        #心跳检测
+
+    mysql-server:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      name: mx-assess
+      jdbc-url: jdbc:mysql://localhost:3306/guli?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 5240zhouquan
+      type: com.zaxxer.hikari.HikariDataSource      # Hikari连接池的设置
+      hikari:
+        minimum-idle: 5                 #最小连接
+        maximum-pool-size: 15        #最大连接
+        auto-commit: true        #自动提交
+        idle-timeout: 30000        #最大空闲时常
+        pool-name: DatebookHikariCP        #连接池名
+        max-lifetime: 1800000        #最大生命周期
+        connection-timeout: 30000        #连接超时时间
+        connection-test-query: SELECT 1        #心跳检测
 
 
 
+#mybatis
+mybatis:
+  typeAliasesPackage: com.taosdata.jdbc.springbootdemo.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl     #打印sql
+    call-setters-on-nulls: true  #设置查询字段为空时，也返回该字段
+    map-underscore-to-camel-case: true
+```
 
+**3、创建两个配置文件**
 
+MysqlServerConfig.class
 
+```java
 
+@Configuration
+@MapperScan(basePackages = {"com.taosdata.jdbc.springbootdemo.mapper.mysql"}, sqlSessionTemplateRef  = "mysqlSqlSessionTemplate")
+public class MysqlServerConfig {
+    @Bean(name = "mysqlDataSource")
+    @ConfigurationProperties(prefix = "spring.datasource.mysql-server")
+    @Primary
+    public DataSource mysqlDataSource() {
+        return DataSourceBuilder.create().build();
+    }
 
+    @Bean(name = "mysqlSqlSessionFactory")
+    @Primary
+    public SqlSessionFactory mysqlSqlSessionFactory(@Qualifier("mysqlDataSource") DataSource dataSource) throws Exception {
+        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
+        bean.setDataSource(dataSource);
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/mysql/*.xml"));
+        return bean.getObject();
+    }
 
+    @Bean(name = "mysqlTransactionManager")
+    @Primary
+    public DataSourceTransactionManager mysqlTransactionManager(@Qualifier("mysqlDataSource") DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
 
+    @Bean(name = "mysqlSqlSessionTemplate")
+    @Primary
+    public SqlSessionTemplate mysqlSqlSessionTemplate(@Qualifier("mysqlSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
+        return new SqlSessionTemplate(sqlSessionFactory);
+    }
+}
+```
 
+TDengineServerConfig.class
 
+```java
 
+@Configuration
+@MapperScan(basePackages = {"com.taosdata.jdbc.springbootdemo.mapper.tdengine"}, sqlSessionTemplateRef  = "tdengineSqlSessionTemplate")
+public class TDengineServerConfig {
+    @Bean(name = "tdengineDataSource")
+    @ConfigurationProperties(prefix = "spring.datasource.tdengine-server")
+    public DataSource tdengineDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean(name = "tdengineSqlSessionFactory")
+    public SqlSessionFactory tdengineSqlSessionFactory(@Qualifier("tdengineDataSource") DataSource dataSource) throws Exception {
+        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
+        bean.setDataSource(dataSource);
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/tdengine/*.xml"));
+        return bean.getObject();
+    }
+
+    @Bean(name = "tdengineTransactionManager")
+    public DataSourceTransactionManager tdengineTransactionManager(@Qualifier("tdengineDataSource") DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
+
+    @Bean(name = "tdengineSqlSessionTemplate")
+    public SqlSessionTemplate tdengineSqlSessionTemplate(@Qualifier("tdengineSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
+        return new SqlSessionTemplate(sqlSessionFactory);
+    }
+
+}
+```
+
+其他的东西就是正常写了，Tdengine只能用xml来写。
 
 
 
