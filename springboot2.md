@@ -273,14 +273,14 @@ SpringBoot是由Pivotal团队提供的全新框架，其设计目的是用来<fo
 
 Spring程序缺点
 
-- 依赖设置繁琐
-  - 以前写Spring程序，使用的技术都要自己一个一个的写，现在不需要了，如果做过原始SpringMVC程序的小伙伴应该知道，写SpringMVC程序，最基础的spring-web和spring-webmvc这两个坐标时必须的，就这还不包含你用json啊等等这些坐标，现在呢？一个坐标搞定。除此之外，之前我们Spring程序最少有一个配置文件或配置类把，做web开发的话，必须要web的配置文件吧，现在都没得了
-- 配置繁琐
-  - 以前写配置类或者配置文件，然后用什么东西就要自己写加载bean这些东西，现在呢？什么都没写，照样能用。写bean真的是脑壳痛都。
+- 依赖设置繁琐，pom文件需要自己一个个导入，例如spring-web，spring-webmvc啊
+  - 以前写Spring程序，使用的技术都要自己一个一个的写，现在不需要了，如果做过原始SpringMVC程序的小伙伴应该知道，写SpringMVC程序，最基础的spring-web和spring-webmvc这两个坐标时必须的，就这还不包含你用json啊等等这些坐标，现在呢？一个坐标搞定。
+- 配置文件多且繁琐，applicationcontext.xml , spring-mvc.xml , web.xml等，
+  - 之前我们Spring程序最少有一个配置文件或配置类把，做web开发的话，必须要web的配置文件吧，现在都没得了。以前写配置类或者配置文件，然后用什么东西就要自己写加载bean这些东西，现在呢？什么都没写，照样能用。写bean真的是脑壳痛都。
 
 这些简化操作在SpringBoot中有专业的用语，也是**SpringBoot程序的核心功能及优点：**
 
-- 起步依赖（简化依赖配置）
+- 起步依赖（简化依赖配置）——parent+starter
   - 依赖配置的书写简化就是靠这个起步依赖达成的
 - 自动配置（简化常用工程相关配置）
   - 配置过于繁琐，使用自动配置就可以做响应的简化，但是内部还是很复杂的，后面具体展开说
@@ -362,7 +362,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 ​	朦朦胧胧中感觉starter与parent好像都是帮助我们简化配置的，但是功能又不一样，梳理一下。
 
-​	<font color="#ff0000"><b>starter</b></font>是一个坐标中定了若干个坐标，以前写多个的，现在写一个，<font color="#ff0000"><b>是用来减少依赖配置的书写量的</b></font>
+​	<font color="#ff0000"><b>starter</b></font>是一个坐标中定义若干个坐标，以前写多个的依赖，现在写一个，<font color="#ff0000"><b>是用来减少依赖配置的书写量的</b></font>
 
 ​	<font color="#ff0000"><b>parent</b></font>是定义了几百个依赖版本号，以前写依赖需要自己手工控制版本，现在由SpringBoot统一管理，这样就不存在版本冲突了，<font color="#ff0000"><b>是用来减少依赖冲突的</b></font>。
 
@@ -499,7 +499,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
       }
   ```
 
-- 获取请求体参数，只能使用实体类进行接收,如**localhost:80/msgs**————@RequestBody；（只有当使用Ajax提交，接收为json格式时用）
+- 获取请求体参数，只能使用实体类进行接收,如**localhost:80/msgs**————@RequestBody；==（只有当使用Ajax提交，接收为json格式时用）==
 
   ```java
   public class TeleCode {
@@ -624,7 +624,7 @@ public class BooksController {
 
 入门案例做完了，下面就要研究SpringBoot的用法了。通过入门案例，各位小伙伴能够感知到一个信息，SpringBoot没有具体的功能，它在辅助加快Spring程序的开发效率。我们发现现在几乎不用做任何的配置，功能就有了，确实很好用。但是仔细想想，没有做配置意味着什么？意味着配置已经做好了，不用你自己写了。但是新的问题又来了，如果不想用已经写好的默认配置，该如何干预呢？这就是这一章咱们要研究的问题。
 
-SpringBoot呈现给开发者的只有三个文件，一个pom.xml，一个引导类，一个application.properties。那不用说了，我们自定义的配置就是在这里弄了。
+SpringBoot呈现给开发者的只有三个文件，**一个pom.xml，一个引导类，一个application.properties**。那不用说了，我们自定义的配置就是在这里弄了。
 
 ### 1.属性配置
 
@@ -1390,7 +1390,7 @@ mybatis-plus:
 
 <img src="images/image-20220328164732364.png" alt="image-20220328164732364" style="zoom:80%;" />
 
-##### --分页查询
+##### --分页查询@Configuration
 
 这里慢慢讲一下实现过程：
 
@@ -1601,7 +1601,7 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, Book> implements I
 
 <img src="images/image-20220330165439870.png" alt="image-20220330165439870" style="zoom: 67%;" />
 
-##### --消息一致性处理
+##### --前后端数据协议
 
 目前我们通过Postman测试后业务层接口功能时通的，但是这样的结果给到前端开发者会出现一个小问题。不同的操作结果所展示的数据格式差异化严重!
 
@@ -1822,7 +1822,7 @@ handleEdit() {
 },
 ```
 
-#### 7.异常消息处理
+#### 7.异常消息处理@ControllerAdvice
 
 就拿我们之前的保存业务方法为例，我们手动在里面添加一个异常如下：
 
@@ -2285,14 +2285,14 @@ springboot给配置分等级的原因：满足不同人的需求！！！一是�
 
 <img src="images/image-20220405112745338.png" alt="image-20220405112745338" style="zoom:80%;" />
 
-SpringBoot提供了配置文件和临时属性的方式来对程序进行配置。前面一直说的是临时属性，这一节要说说配置文件了。其实这个配置文件我们一直在使用，只不过我们用的是SpringBoot提供的4级配置文件中的其中一个。4个级别分别是：
+**SpringBoot提供了配置文件和临时属性的方式来对程序进行配置。**前面一直说的是临时属性，这一节要说说配置文件了。其实这个配置文件我们一直在使用，只不过我们用的是SpringBoot提供的4级配置文件中的其中一个。**4个级别分别是：**
 
 - 程序包jar所在目录中config目录下配置文件；
 - 程序包jar所在目录中配置文件；
 - 类路径下配置文件（就是resources目录中的application.yml文件）；
 - 类路径下config目录下配置文件；
 
-​		好复杂，一个一个说。其实上述4种文件是提供给你了4种配置文件书写的位置，功能都是一样的，都是做配置的。他们的区别就是存放的位置不同导致了他们四个的配置优先级不同；上面4个文件的加载优先顺序为：
+​		好复杂，一个一个说。其实上述4种文件是提供给你了4种配置文件书写的位置，功能都是一样的，都是做配置的。他们的区别就是**存放的位置不同导致了他们四个的配置优先级不同**；上面4个文件的加载优先顺序为：
 
 1. **file ：config/application.yml** 【最高】	（jar包）
 2. **file ：application.yml**    （jar包）
@@ -4578,7 +4578,7 @@ public class SMCodeServiceImpl implements SMCodeService {
     private Codeutils codeutils;
 
     @Override
-    @CachePut(value = "smCode",key = "#tele")
+    @CachePut(value = "smCode",key = "#tele") // f
     public String sendCodeToSM(String tele) {
         return codeutils.generateCode(tele);
     }
