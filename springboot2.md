@@ -21,11 +21,11 @@
 
 **步骤①**：创建新模块，选择Spring Initializr，并配置模块相关基础信息
 
-<img src="images/image-20220325194120551.png" alt="image-20220325194120551" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325194120551.png" alt="image-20220325194120551" style="zoom: 67%;" />
 
 **步骤②**：选择当前模块需要使用的技术集
 
-<img src="images/image-20220325194226887.png" alt="image-20220325194226887" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325194226887.png" alt="image-20220325194226887" style="zoom:67%;" />
 
 按照要求，左侧选择web，然后在中间选择Spring Web即可，选完右侧就出现了新的内容项，这就表示勾选成功了
 
@@ -33,7 +33,7 @@
 
 生成的目录结构如下：（已经设置隐藏了一些文件）
 
-<img src="images/image-20220325194819558.png" alt="image-20220325194819558" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325194819558.png" alt="image-20220325194819558" style="zoom:80%;" />
 
 **步骤③**：开发控制器类。我们直接新建一个包，写controller层代码。
 
@@ -54,7 +54,7 @@ public class BookController {
 
 **步骤④**：运行自动生成的Application类
 
-<img src="images/image-20220102205513372.png" alt="image-20220102205513372" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102205513372.png" alt="image-20220102205513372" style="zoom:80%;" />
 
 ```
 访问路径：	http://localhost:8080/books
@@ -62,7 +62,7 @@ public class BookController {
 
 不难看出，运行的信息中包含了8080的端口，Tomcat这种熟悉的字样，难道这里启动了Tomcat服务器？是的，这里已经启动了。那服务器没有配置，哪里来的呢？后面再说。现在就可以通过浏览器访问请求的路径。66666
 
-<img src="images/image-20220325195639084.png" alt="image-20220325195639084" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325195639084.png" alt="image-20220325195639084" style="zoom:80%;" />
 
 是不是感觉很神奇？目前的效果其实依赖的底层逻辑还是很复杂的，但是从开发者角度来看，目前只有两个文件展现到了开发者面前
 
@@ -147,15 +147,15 @@ public class BookController {
 
 SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可以通过项目一级一级的找到SpringBoot技术的介绍页，然后在页面中间部位找到如下内容
 
-<img src="images/image-20220102205824712.png" alt="image-20220102205824712" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102205824712.png" alt="image-20220102205824712" style="zoom:67%;" />
 
 **步骤①**：点击Spring Initializr后进入到创建SpringBoot程序的界面上，下面是输入信息的过程，和前面的一样，只是界面变了而已，根据自己的要求，在左侧选择对应信息和输入对应的信息即可
 
-<img src="images/image-20220102205855293.png" alt="image-20220102205855293" style="zoom: 80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102205855293.png" alt="image-20220102205855293" style="zoom: 80%;" />
 
 **步骤②**：右侧的ADD DEPENDENCIES用于选择使用何种技术，和之前勾选的Spring WEB是在做同一件事，仅仅是界面不同而已，点击后打开网页版的技术选择界面
 
-<img src="images/image-20220102205921568.png" alt="image-20220102205921568" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102205921568.png" alt="image-20220102205921568" style="zoom:80%;" />
 
 **步骤③**：所有信息设置完毕后，点击下面左侧按钮，生成一个文件包
 
@@ -167,7 +167,7 @@ SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可
 
 ​	做到这里其实可以透漏一个小秘密，Idea工具中创建SpringBoot工程其实连接的就是SpringBoot的官网，走的就是这个过程，只不过Idea把界面给整合了一下，读取到了Spring官网给的信息，然后展示到了Idea的界面中而已。
 
-<img src="images/image-20220102210110630.png" alt="image-20220102210110630" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102210110630.png" alt="image-20220102210110630" style="zoom:80%;" />
 
 ### 3.springboot项目创建（阿里云版）
 
@@ -175,15 +175,17 @@ SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可
 
 创建工程时，切换选择starter服务路径，然后手工收入阿里云提供给我们的使用地址即可。地址：http://start.aliyun.com
 
-<img src="images/image-20220102210325134.png" alt="image-20220102210325134" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102210325134.png" alt="image-20220102210325134" style="zoom:80%;" />
 
 阿里为了便于自己开发使用，因此在依赖坐标中添加了一些阿里相关的技术，也是为了推广自己的技术吧，所以在依赖选择列表中，你有了更多的选择。不过有一点需要说清楚，阿里云地址默认创建的SpringBoot工程版本是<font color="#ff0000"><b>2.4.1</b></font>，所以如果你想更换其他的版本，创建项目后手工修改即可，别忘了刷新一下，加载新版本信息
 
-<img src="images/image-20220102210348015.png" alt="image-20220102210348015" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102210348015.png" alt="image-20220102210348015" style="zoom:80%;" />
 
 阿里云提供的地址更符合国内开发者的使用习惯，里面有一些SpringBoot官网上没有给出的坐标。
 
 ​	<font color="#ff0000"><b>注意</b></font>：阿里云提供的工程创建地址初始化完毕后和实用SpringBoot官网创建出来的工程略有区别。主要是在配置文件的形式上有区别。
+
+
 
 ### 4.自己创建SpringBoot
 
@@ -191,7 +193,7 @@ SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可
 
 第一步：创建一个java的maven模块
 
-<img src="images/image-20220325205548147.png" alt="image-20220325205548147" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325205548147.png" alt="image-20220325205548147" style="zoom:80%;" />
 
 第二步：导入springboot的依赖。
 
@@ -265,7 +267,7 @@ public class BooksController {
 }
 ```
 
-<img src="images/image-20220325210602601.png" alt="image-20220325210602601" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325210602601.png" alt="image-20220325210602601" style="zoom:67%;" />
 
 ### SpringBoot搭建细节
 
@@ -300,7 +302,7 @@ Spring程序缺点
 
 举一个很简单的例子，其实就是Maven里面的依赖传递。核心是< parent>标签。
 
-<img src="images/image-20220325215917573.png" alt="image-20220325215917573" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220325215917573.png" alt="image-20220325215917573" style="zoom:80%;" />
 
 在我们的父模块下，定义好需要的依赖，并且指定好坐标版本。我们新建的子模块只需要去继承他就行了。
 
@@ -319,21 +321,21 @@ Spring程序缺点
 
 点击进去查看这个pom文件，他又有一个parent，然后下面的东西几百行都不是我们想要的：
 
-<img src="images/image-20220326093405830.png" alt="image-20220326093405830" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326093405830.png" alt="image-20220326093405830" style="zoom:80%;" />
 
 点击进去查看`spring-boot-dependencies`这个pom文件，哇，终于找到了，核心地方就是这里：
 
-<img src="images/image-20220326093543568.png" alt="image-20220326093543568" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326093543568.png" alt="image-20220326093543568" style="zoom:80%;" />
 
 他在properties定义了统一的版本号，那为什么我们自己引入依赖的时候，没有用 ${ }去引入这个属性呢，往下翻你会看到他定义了< dependencyManagement>：
 
-<img src="images/image-20220326093828916.png" alt="image-20220326093828916" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326093828916.png" alt="image-20220326093828916" style="zoom:80%;" />
 
 接下来，我们看一下阿里云他是怎么做的！
 
 打开pom文件，发现他并没有继承parent，而是写了这样一个东西：直接引入了我们的`spring-boot-dependencies`，哦，到这里大家就应该明白了，springboot的核心就是这个资源，这两种只是使用的方式不一样而已。
 
-<img src="images/image-20220326094354403.png" alt="image-20220326094354403" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326094354403.png" alt="image-20220326094354403" style="zoom:80%;" />
 
 **总结**
 
@@ -352,11 +354,11 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 打开pom文件，springboot会自动给我们两个依赖，一个是web的，一个是web测试的starter。
 
-<img src="images/image-20220326151933496.png" alt="image-20220326151933496" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326151933496.png" alt="image-20220326151933496" style="zoom:80%;" />
 
 点进去看一下，哦呼，可以发现我们所有需要的资源都在这里，有SpringMVC的也有Spring集成Web的，往上面还有几个starter，同理可知，这几个starter里面肯定也引入了一大堆他所需要的依赖，所以说，我们自己不用导入想使用的资源了，早就已经有了。
 
-<img src="images/image-20220326152156289.png" alt="image-20220326152156289" style="zoom: 80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326152156289.png" alt="image-20220326152156289" style="zoom: 80%;" />
 
 **starter与parent的区别**
 
@@ -389,11 +391,11 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 ​	配置说完了，我们发现SpringBoot确实帮助我们减少了很多配置工作，那程序是如何运行的。目前程序运行的入口就是SpringBoot工程创建时自带的带有main方法那个类了。
 
-<img src="images/image-20220326153128696.png" alt="image-20220326153128696" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326153128696.png" alt="image-20220326153128696" style="zoom:80%;" />
 
 我们Crtl+Alt+V看一下这个run方法的运行结果是什么？
 
-<img src="images/image-20220326200018698.png" alt="image-20220326200018698" style="zoom: 80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326200018698.png" alt="image-20220326200018698" style="zoom: 80%;" />
 
 哇哇！！这不是应用上下文对象嘛，不就是Spring的那个最终的东西嘛，并且我们还可以从里面拿到Bean。所以说到这里就明白了。这个方法就是用来产生Spring容器对象的。说到底SpringBoot就是为了简化加速Spring开发的，具体实现还是Spring那一套。
 
@@ -407,7 +409,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 我们去Pom文件里面找一下：
 
-<img src="images/image-20220326201659667.png" alt="image-20220326201659667" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326201659667.png" alt="image-20220326201659667" style="zoom:80%;" />
 
 原来是tomcat这个starter，在web-starter里面引入了这个服务器。那问题来了，之前我们不是把java程序扔到web服务器里面跑嘛，怎么现在给java程序内嵌了一个服务器呢？？？
 
@@ -423,7 +425,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 那既然是个对象，如果把这个对象从Spring容器中去掉是不是就没有web服务器的功能呢？是这样的，通过依赖排除可以去掉这个web服务器功能，
 
-<img src="images/image-20220326202130193.png" alt="image-20220326202130193" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326202130193.png" alt="image-20220326202130193" style="zoom:80%;" />
 
 然后我们可以更改自己想要使用的服务器，SpringBoot提供了3款内置的服务器，
 
@@ -435,7 +437,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
   想用哪个，加个坐标就OK。前提是把tomcat排除掉，因为tomcat是默认加载的。
 
-  <img src="images/image-20220326202309339.png" alt="image-20220326202309339" style="zoom:80%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326202309339.png" alt="image-20220326202309339" style="zoom:80%;" />
 
 ### 教你一招：在Idea中隐藏指定文件/文件夹
 
@@ -447,11 +449,11 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 **步骤①**：打开设置，【Files】→【Settings】
 
-<img src="images/image-20220102210654947.png" alt="image-20220102210654947" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102210654947.png" alt="image-20220102210654947" style="zoom:80%;" />
 
 **步骤②**：打开文件类型设置界面，【Editor】→【File Types】→【Ignored Files and Folders】，忽略文件或文件夹显示
 
-<img src="images/image-20220102210706755.png" alt="image-20220102210706755" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102210706755.png" alt="image-20220102210706755" style="zoom:80%;" />
 
 **步骤③**：添加你要隐藏的文件名称或文件夹名称，可以使用*号通配符，表示任意，设置完毕即可。
 
@@ -461,7 +463,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 - <font color="#ff0000"><b>REST</b></font>：（Representational State Transfer），表现形式状态转换。一种资源表现风格
 
-<img src="images/image-20220102212202122.png" alt="image-20220102212202122" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102212202122.png" alt="image-20220102212202122" style="zoom:80%;" />
 
 优点：
 
@@ -470,7 +472,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
 
 **这样就有一个问题**：我怎么知道它具体是做的什么操作呢，我查询指定用户用的是上面那个user/1的路径，那我删除呢，修改呢，于是这个公司建立了下面这种，加了一个行为动作。
 
-<img src="images/image-20220102212358137.png" alt="image-20220102212358137" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102212358137.png" alt="image-20220102212358137" style="zoom:80%;" />
 
 <font color="#ff0000"><b>RESTful</b></font>：后来我们统一把上面几个根据REST风格对资源进行访问的方式叫做RESTful
 
@@ -513,7 +515,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
   }
   ```
 
-  <img src="images/image-20220505185222864.png" alt="image-20220505185222864" style="zoom: 80%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220505185222864.png" alt="image-20220505185222864" style="zoom: 80%;" />
 
 - 一般的MVC普通参数，如**localhost:80/msgs?phone=139&mycode=123456**————@RequestParam；(假如参数名字与接受参数名字一样就会自动注入，不用加这个注解)
 
@@ -524,7 +526,7 @@ SpringBoot关注到开发者在实际开发时，对于依赖坐标的使用往�
       }
   ```
 
-<img src="images/image-20220327102112041.png" alt="image-20220327102112041"  />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327102112041.png" alt="image-20220327102112041"  />
 
 上述url地址	`/user/1`	中的1就是要获得的请求参数，在SpringMVC中可以使用**占位符**进行参数绑定。地址	`/user/1`	可以写成	`/user/{id}`	，占位符{id}对应的就是1的值。在业务方法中我们可以使用**@PathVariable注解**进行占位符的匹配获取工作。
 
@@ -587,19 +589,19 @@ public class BooksController {
 
 看到上面，其实是有很多重复的代码的，例如每个方法都写了@ResponseBody注解，每个方法url都有重复的books，
 
-<img src="images/image-20220327105603136.png" alt="image-20220327105603136" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327105603136.png" alt="image-20220327105603136" style="zoom:80%;" />
 
 
 
 **第一步简化**：我们把这些重复的代码，可以直接放到类上进行注解撒。但是注意哦，有路径参数的，还是要写单独写在方法上面。
 
-<img src="images/image-20220327110212550.png" alt="image-20220327110212550" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327110212550.png" alt="image-20220327110212550" style="zoom:80%;" />
 
 
 
 **第二步简化：**SpringBoot提供了一个单独给Rest风格的注解，==`@RestController`==，他等于`@Controller+@ResponseBody`。
 
-<img src="images/image-20220327110343535.png" alt="image-20220327110343535" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327110343535.png" alt="image-20220327110343535" style="zoom:80%;" />
 
 
 
@@ -612,13 +614,13 @@ public class BooksController {
          @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
 ```
 
-<img src="images/image-20220327110920861.png" alt="image-20220327110920861" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327110920861.png" alt="image-20220327110920861" style="zoom:80%;" />
 
 **最终效果：**
 
-<img src="images/image-20220505180752307.png" alt="image-20220505180752307" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220505180752307.png" alt="image-20220505180752307" style="zoom:80%;" />
 
-<img src="images/image-20220327111539700.png" alt="image-20220327111539700" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327111539700.png" alt="image-20220327111539700" style="zoom:80%;" />
 
 ## SpringBoot基础配置
 
@@ -677,7 +679,7 @@ properties格式的文件书写规范是**key=value，**
 
 例如，点击进去我们的spring-boot-starter-web里面就依赖这个资源！！！
 
-<img src="images/image-20220326203546232.png" alt="image-20220326203546232" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220326203546232.png" alt="image-20220326203546232" style="zoom:80%;" />
 
 ### 2.配置文件分类
 
@@ -719,6 +721,8 @@ yml和yaml文件格式就是一模一样的，只是文件后缀不同，所以�
 1. 配置文件间的加载优先级	properties（最高）>  yml  >  yaml（最低）
 2. 不同配置文件中相同配置按照加载优先级相互覆盖，不同配置文件中不同配置全部保留
 
+
+
 ### 教你一招：**自动提示功能消失解决方案**
 
 有的时候，我们新建或者删除了配置文件之后，发现配置的代码自动提示消失了。
@@ -732,25 +736,25 @@ yml和yaml文件格式就是一模一样的，只是文件后缀不同，所以�
 
 **步骤①**：打开设置，【Files】→【Project Structure...】
 
-<img src="images/image-20220102215017215.png" alt="image-20220102215017215" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215017215.png" alt="image-20220102215017215" style="zoom:80%;" />
 
 **步骤②**：在弹出窗口中左侧选择【Facets】，右侧选中Spring路径下对应的模块名称，也就是你自动提示功能消失的那个模块
 
-<img src="images/image-20220102215031651.png" alt="image-20220102215031651" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215031651.png" alt="image-20220102215031651" style="zoom:80%;" />
 
-<img src="images/image-20220102215056457.png" alt="image-20220102215056457" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215056457.png" alt="image-20220102215056457" style="zoom:80%;" />
 
 **步骤③**：点击Customize Spring Boot按钮，此时可以看到当前模块对应的配置文件是哪些了。如果没有你想要称为配置文件的文件格式，就有可能无法弹出提示
 
-<img src="images/image-20220102215120617.png" alt="image-20220102215120617" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215120617.png" alt="image-20220102215120617" style="zoom:80%;" />
 
-<img src="images/image-20220102215131052.png" alt="image-20220102215131052" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215131052.png" alt="image-20220102215131052" style="zoom:80%;" />
 
 **步骤④**：选择添加配置文件，然后选中要作为配置文件的具体文件就OK了
 
-<img src="images/image-20220102215143545.png" alt="image-20220102215143545" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215143545.png" alt="image-20220102215143545" style="zoom:80%;" />
 
-<img src="images/image-20220102215150406.png" alt="image-20220102215150406" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102215150406.png" alt="image-20220102215150406" style="zoom:80%;" />
 
 ### 3.yml文件格式
 
@@ -821,9 +825,9 @@ users2: [{name: zhangsan,age: 18},{name: lisi, age: 10}]
 
 yaml中保存的单个数据，可以使用Spring中的注解直接读取，使用**@Value**（Spring的注解）可以读取单个数据，属性名引用方式：<font color="#ff0000"><b>${一级属性名.二级属性名……}</b></font>。从这里也可以知道，SpringBoot会自动读取我们yml配置文件里面的数据，并且放到Spring容器里面。
 
-![image-20220327164311185](images/image-20220327164311185.png)
+![image-20220327164311185](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327164311185.png)
 
-<img src="images/image-20220327163744960.png" alt="image-20220327163744960"  />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327163744960.png" alt="image-20220327163744960"  />
 
 记得使用**@Value注解**时，要将该注入写在某一个指定的Spring管控的bean的属性名上方。
 
@@ -847,7 +851,7 @@ lesson: "Spring\tboot\nlession"		#==>Spring	boot
 
 SpringBoot提供了一个对象，能够把所有的配置数据都封装到这一个对象中，这个对象叫做**Environment**，使用**自动装配注解@Autowired**可以将所有的yaml数据封装到这个对象中
 
-<img src="images/image-20220102221830626.png" alt="image-20220102221830626"  />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102221830626.png" alt="image-20220102221830626"  />
 
 数据封装到了Environment对象中，获取属性时，通过Environment的接口操作进行，具体方法是**getProperties（String）**，参数填写属性名即可
 
@@ -861,13 +865,13 @@ SpringBoot提供了一个对象，能够把所有的配置数据都封装到这�
 
 3，使用的时候从Spring容器里面直接拿取。**@Autowired**
 
-<img src="images/image-20220102223529481.png" alt="image-20220102223529481"  />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102223529481.png" alt="image-20220102223529481"  />
 
 这个@ConfigurationProperties必须告诉他加载的**数据前缀**是什么，这样当前前缀下的所有属性就封装到这个对象中。记得**自定义对象属性名要与yml对象属性名一一对应**啊，不然没法封装。
 
 以后如果你要定义一组数据自己使用，就可以先写一个对象，然后定义好属性，然后到配置中根据这个格式书写即可。
 
-<img src="images/image-20220102224730794.png" alt="image-20220102224730794" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220102224730794.png" alt="image-20220102224730794" style="zoom:80%;" />
 
 ## SpringBoot实现SSMP整合
 
@@ -960,9 +964,9 @@ class Springboot04JunitApplicationTests {
 
 **步骤①**：创建模块时勾选要使用的技术，MyBatis，由于要操作数据库，还要勾选对应数据库
 
-![image-20211129092156020](images/image-20211129092156020.png)
+![image-20211129092156020](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211129092156020.png)
 
-![image-20211129092210993](images/image-20211129092210993.png)
+![image-20211129092210993](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211129092210993.png)
 
 ​	或者手工导入对应技术的starter，和对应数据库的坐标
 
@@ -1001,13 +1005,13 @@ spring:
 
 **第一步：**实体类
 
-<img src="images/image-20220327210453926.png" alt="image-20220327210453926" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327210453926.png" alt="image-20220327210453926" style="zoom:80%;" />
 
 **第二步：**Mapper接口和xml文件。（还是和原来一样的）注意 **@Mapper**注解，作用是：让数据库SQL映射被容器识别到。
 
-<img src="images/image-20220327210553124.png" alt="image-20220327210553124" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327210553124.png" alt="image-20220327210553124" style="zoom:80%;" />
 
-<img src="images/image-20220327210609008.png" alt="image-20220327210609008" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327210609008.png" alt="image-20220327210609008" style="zoom:80%;" />
 
 **第三步：**测试
 
@@ -1091,13 +1095,13 @@ mybatis-plus:
 
 第一步：实体类
 
-<img src="images/image-20220327213249862.png" alt="image-20220327213249862" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327213249862.png" alt="image-20220327213249862" style="zoom:80%;" />
 
 第二步：Mapper接口和映射文件xml。注意加@Mapper，不然SpringBoot怎么知道呢、
 
-<img src="images/image-20220327213353778.png" alt="image-20220327213353778" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327213353778.png" alt="image-20220327213353778" style="zoom:80%;" />
 
-<img src="images/image-20220327213410986.png" alt="image-20220327213410986" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220327213410986.png" alt="image-20220327213410986" style="zoom:80%;" />
 
 第三步：随便测试一个BaseMapper里面的功能。
 
@@ -1168,7 +1172,7 @@ spring:
 
 除了这4个常规配置外，还有druid专用的其他配置。通过提示功能可以打开druid相关的配置查阅：
 
-<img src="images/image-20220328100616343.png" alt="image-20220328100616343" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328100616343.png" alt="image-20220328100616343" style="zoom:80%;" />
 
 
 
@@ -1196,11 +1200,11 @@ SpringBoot能够整合的技术太多太多了，对于初学者来说慢慢来�
 
 对于这个案例如果按照企业开发的形式进行应该制作后台微服务，前后端分离的开发。
 
-<img src="images/image-20211129114306062.png" alt="image-20211129114306062" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211129114306062.png" alt="image-20211129114306062" style="zoom:80%;" />
 
 我知道这个对初学的小伙伴要求太高了，咱们简化一下。后台做单体服务器，前端不使用前后端分离的制作了。
 
-<img src="images/image-20211129114328967.png" alt="image-20211129114328967" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211129114328967.png" alt="image-20211129114328967" style="zoom:80%;" />
 
 一个服务器即充当后台服务调用，又负责前端页面展示，降低学习的门槛。
 
@@ -1242,7 +1246,7 @@ INSERT INTO `tbl_book` VALUES (11, '市场营销', '直播销讲实战一本通'
 INSERT INTO `tbl_book` VALUES (12, '市场营销', '直播带货：淘宝、天猫直播从新手到高手', '一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+');
 ```
 
-<img src="images/image-20220328161218448.png" alt="image-20220328161218448" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328161218448.png" alt="image-20220328161218448" style="zoom:80%;" />
 
 
 
@@ -1388,7 +1392,7 @@ mybatis-plus:
 
 此处设置的是日志的显示形式，当前配置的是控制台输出，当然还可以由更多的选择，根据需求切换即可
 
-<img src="images/image-20220328164732364.png" alt="image-20220328164732364" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328164732364.png" alt="image-20220328164732364" style="zoom:80%;" />
 
 ##### --分页查询@Configuration
 
@@ -1396,7 +1400,7 @@ mybatis-plus:
 
 首先，我们直接使用他的分页查询方法，其中第一个参数是Ipage对象，用来装我们的分页查询条件的（current&size），第二个是条件查询，用来生成where语句，他的名称叫做queryWrapper – 实体对象封装操作类。
 
-<img src="images/image-20220328172138337.png" alt="image-20220328172138337" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328172138337.png" alt="image-20220328172138337" style="zoom:80%;" />
 
 ```java
 @Test
@@ -1408,13 +1412,13 @@ public void testGetByPage(){
 
 运行结果：
 
-<img src="images/image-20220328170257017.png" alt="image-20220328170257017" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328170257017.png" alt="image-20220328170257017" style="zoom:80%;" />
 
 哟，怎么回事呢？其实MybatisPlus做分页查询，也就是在我们正常的Select语句后面加上`Limit ?, ?`，对吧，看似很简单但Mybatis没有默认给我们开启这个功能。因为第一点，你不一定会用到这个往SQL语句后面添加的操作，第二点还有很多其他的可以SQL语句添加的功能，所以让开发者自己来使用。
 
 实现过程，是通过MybatisPlus的拦截器实现的（可以理解成先是生成正常的语句，然后他给拦截下来强制加上一些东西再给数据库）。这个就不能通过yml配置文件了，需要我们新建一个配置类，然后把拦截器类给到Spring容器，后面MP他就会自己调用。（需要熟悉一些Spring注解写配置文件）
 
-<img src="images/image-20220328170942215.png" alt="image-20220328170942215" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328170942215.png" alt="image-20220328170942215" style="zoom:80%;" />
 
 ```java
 @Configuration
@@ -1434,13 +1438,13 @@ public class MPConfig {
 
 然后我们再直接测试前面的代码：GOOD
 
-<img src="images/image-20220328171209997.png" alt="image-20220328171209997" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328171209997.png" alt="image-20220328171209997" style="zoom:80%;" />
 
 
 
 **第二步：拿到我们的分页查询到的数据。**
 
-<img src="images/image-20220328171628652.png" alt="image-20220328171628652" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328171628652.png" alt="image-20220328171628652" style="zoom:80%;" />
 
 方法执行结果返回的还是一个Ipage对象，其实最后的结果全部封装给了我们传入的这个Ipage对象！！！真的不错，太方便了。我们通过Getter方法拿到里面的值。
 
@@ -1461,7 +1465,7 @@ public void testGetByPage(){
 
 这里的核心对象就是之前我们遇见的**Wrapper**，在很多方法里面都有例如SelectList、selectPage、update、delete（可以在BaseMapper里面看到），我们点进去看一下这个**Wrapper类**，Crtl+H查看一下他的父类和实现类：
 
-<img src="images/image-20220328174338007.png" alt="image-20220328174338007" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328174338007.png" alt="image-20220328174338007" style="zoom:80%;" />
 
 标红的两个实现类就是我们用的最多最多的，**一个QueryWrapper、一个LambdaQueryWrapper**。他的专业名称叫做 实体对象封装操作类，通过调用里面的方法组后在SQL语句中生成Where条件！
 
@@ -1486,7 +1490,7 @@ public void testGetBy(){
 
 运行结果：
 
-<img src="images/image-20220328175309781.png" alt="image-20220328175309781" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328175309781.png" alt="image-20220328175309781" style="zoom:80%;" />
 
 <font color="#f0f"><b>温馨提示</b></font>
 
@@ -1548,9 +1552,9 @@ selectByUserNameAndPassword(String username,String password);
 1. 业务层都是逻辑规则，所以我们用Boolean类型；
 2. 参数类型Integer的默认值为null，而int默认值为0。注意使用区分，因为0在我们Dao层给到数据库是有具有意义的！！！
 
-<img src="images/image-20220328202822505.png" alt="image-20220328202822505" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328202822505.png" alt="image-20220328202822505" style="zoom:80%;" />
 
-<img src="images/image-20220328202854457.png" alt="image-20220328202854457" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220328202854457.png" alt="image-20220328202854457" style="zoom:80%;" />
 
 ##### --快速开发
 
@@ -1595,21 +1599,21 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, Book> implements I
 
 其中注意：分页查询的返回结果直接给Ipage对象就行了。反正最后都会转成json。
 
-<img src="images/image-20220330165326863.png" alt="image-20220330165326863" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330165326863.png" alt="image-20220330165326863" style="zoom:80%;" />
 
 全部通过测试。其中单独看一下分页查询返回的这个Page对象，转换成JSON后有什么数据，
 
-<img src="images/image-20220330165439870.png" alt="image-20220330165439870" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330165439870.png" alt="image-20220330165439870" style="zoom: 67%;" />
 
 ##### --前后端数据协议
 
 目前我们通过Postman测试后业务层接口功能时通的，但是这样的结果给到前端开发者会出现一个小问题。不同的操作结果所展示的数据格式差异化严重!
 
-<img src="images/image-20220330165648554.png" alt="image-20220330165648554" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330165648554.png" alt="image-20220330165648554" style="zoom:80%;" />
 
 ​	所以说必须将所有操作的操作结果数据格式统一起来，需要设计表现层返回结果的模型类，用于后端与前端进行数据格式统一，也称为**前后端数据协议**。
 
-<img src="images/image-20220330170044941.png" alt="image-20220330170044941" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330170044941.png" alt="image-20220330170044941" style="zoom:80%;" />
 
 其中flag表示该操作是否成功；data用来装查询到的数据。对于增删改这种无数据的，就给null就行。
 
@@ -1617,17 +1621,17 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, Book> implements I
 
 第一步：新建类，这是给表现层用的吧，我们就写在表现层里面。
 
-<img src="images/image-20220330170420152.png" alt="image-20220330170420152" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330170420152.png" alt="image-20220330170420152" style="zoom:80%;" />
 
-<img src="images/image-20220330171822017.png" alt="image-20220330171822017" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330171822017.png" alt="image-20220330171822017" style="zoom:80%;" />
 
 第二步：修改表现层的返回结果，全部设为R类型，通过构造方法注入值。（用Setter方法，显得代码量多，很冗余）。值得注意的是：为什么查询的操作都是设为true，因为既然已经走到业务处理层了，那就证明服务器在处理请求的过程中没有出错，所以设置为true。
 
-<img src="images/image-20220330172205151.png" alt="image-20220330172205151" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330172205151.png" alt="image-20220330172205151" style="zoom:80%;" />
 
 后面前端拿到的分页查询数据json格式如下：这一看，多爽哦，舒舒服服。
 
-<img src="images/image-20220330172658826.png" alt="image-20220330172658826" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330172658826.png" alt="image-20220330172658826" style="zoom:67%;" />
 
 到这里，后端的工作已经全部搞完了！
 
@@ -1638,15 +1642,15 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, Book> implements I
 - 前后端分离结构设计中，页面归属前端服务器；
 - 单体工程中页面放到resources目录下的static目录中。（若出现问题建议先执行clean）
 
-<img src="images/image-20220330200152181.png" alt="image-20220330200152181" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330200152181.png" alt="image-20220330200152181" style="zoom:80%;" />
 
 我们先打开books.html简单看一下他的页面结构，启动服务器，访问url：http://localhost/pages/books.html，看一下他的页面效果。
 
 前后端连通性测试，就是简单测试一下我们的getAll( )结构，看能否获取到所有数据。
 
-<img src="images/image-20220330200609120.png" alt="image-20220330200609120" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330200609120.png" alt="image-20220330200609120" style="zoom:80%;" />
 
-<img src="images/image-20220330200747857.png" alt="image-20220330200747857" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330200747857.png" alt="image-20220330200747857" style="zoom:67%;" />
 
 #### 6.页面基础功能开发
 
@@ -1656,15 +1660,15 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, Book> implements I
 
 其实很简单，VUE的数据模型双向绑定，通过查看，我们发现这个Table里面绑定的数据模型是`dataList`，然后我们直接在getAll方法里面赋值就完成了。用组件就是爽！
 
-<img src="images/image-20220330202347753.png" alt="image-20220330202347753" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330202347753.png" alt="image-20220330202347753" style="zoom:80%;" />
 
-<img src="images/image-20220330202458461.png" alt="image-20220330202458461" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330202458461.png" alt="image-20220330202458461" style="zoom: 67%;" />
 
 ##### --新增功能
 
 先找到新增按钮和对应的绑定方法，然后找到新增弹框标签，再到方法里面进行属性设置。
 
-<img src="images/image-20220330203151770.png" alt="image-20220330203151770" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220330203151770.png" alt="image-20220330203151770" style="zoom:80%;" />
 
 然后在方法里面设置，为true就可以看见新增的弹框了。哎呀后面所有的前端操作都差不多，找到方法，找到数据模型，然后点击后触发什么事件......后面就不这样一个个截图说明了，很麻烦。
 
@@ -1826,13 +1830,13 @@ handleEdit() {
 
 就拿我们之前的保存业务方法为例，我们手动在里面添加一个异常如下：
 
-<img src="images/image-20220331171722893.png" alt="image-20220331171722893" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331171722893.png" alt="image-20220331171722893" style="zoom:67%;" />
 
 ，然后用ApiPost测试一下，返回的结果是什么。哦呼这是什么玩意呢，
 
-<img src="images/image-20220331171915043.png" alt="image-20220331171915043" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331171915043.png" alt="image-20220331171915043" style="zoom:80%;" />
 
-我们可不能吧这种消息发送给前端，因为前端根本看不懂啊。<img src="images/image-20220331172020953.png" alt="image-20220331172020953" style="zoom:80%;" />
+我们可不能吧这种消息发送给前端，因为前端根本看不懂啊。<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331172020953.png" alt="image-20220331172020953" style="zoom:80%;" />
 
 所以说我们还要对错误的操作数据格式做同样的格式处理！！！！必须将这些消息处理成之前发送的格式。
 
@@ -1868,7 +1872,7 @@ public class R {
 
 **第二步：编写SpringMVC异常处理器。就写在controller层的utils里面。**
 
-<img src="images/image-20220331173551909.png" alt="image-20220331173551909" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331173551909.png" alt="image-20220331173551909" style="zoom:80%;" />
 
 ```java
 // 作为springMVC的异常处理器
@@ -1904,7 +1908,7 @@ public R save(@RequestBody Book book) throws IOException {
 
 这样，我们返回给前端的消息数据就变成了如下格式：
 
-<img src="images/image-20220331174157240.png" alt="image-20220331174157240" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331174157240.png" alt="image-20220331174157240" style="zoom:80%;" />
 
 **第三步：前端处理**
 
@@ -1964,11 +1968,11 @@ handleAdd () {
 
 分页功能是用来替代之前的查询全部功能的，所以说我们直接把前面的 “ 查询全部 ”注释掉，直接覆盖掉：
 
-<img src="images/image-20220331183446611.png" alt="image-20220331183446611" style="zoom: 80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331183446611.png" alt="image-20220331183446611" style="zoom: 80%;" />
 
 然后，再看看elementUI提供的分页组件模型：
 
-<img src="images/image-20220331183615677.png" alt="image-20220331183615677" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331183615677.png" alt="image-20220331183615677" style="zoom:80%;" />
 
 对应了三个分页的数据模型：
 
@@ -2053,11 +2057,11 @@ pagination: {
 
 将查询条件组织成url参数，添加到请求url地址中，这里可以借助其他类库快速开发，当前使用手工形式拼接，降低学习要求。为什么不能用post，因为我们是Restful风格撒，查询只能用get请求。
 
-![image-20220331205844928](images/image-20220331205844928.png)
+![image-20220331205844928](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331205844928.png)
 
 然后修改后台controller层代码，也很简单。
 
-<img src="images/image-20220331205600695.png" alt="image-20220331205600695"  />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220331205600695.png" alt="image-20220331205600695"  />
 
 # SpringBoot实用篇
 
@@ -2078,11 +2082,11 @@ pagination: {
 
 首先考虑的一个问题：我们目前的所有程序都是在Idea下写的，运行也是在Idea下运行的，对吧，浏览器直接访问IDEA上运行的服务器。
 
-<img src="images/image-20220401101401764.png" alt="image-20220401101401764" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401101401764.png" alt="image-20220401101401764" style="zoom:80%;" />
 
 但是实际开发完成后，我们的项目是不可能运行在自己的电脑上的。因为如果你电脑关机了那不是就没有人可以访问资源了嘛。我们以后制作的程序是运行在专用的服务器上的，简单说就是将你做的程序放在一台独立运行的电脑上，这台电脑要比你开发使用的计算机更专业，并且安全等级各个方面要远超过你现在的电脑。
 
-![image-20220401102144672](images/image-20220401102144672.png)
+![image-20220401102144672](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401102144672.png)
 
 那问题来了，如何将我们的程序放到这个高级电脑上面运行呢？首先要将我们的程序先组织成一个文件，然后将这个文件传输到这台服务器上。这里面就存在两个过程，一个是**打包的过程**，另一个**是运行的过程**。
 
@@ -2110,29 +2114,29 @@ pagination: {
 mvn package
 ```
 
-<img src="images/image-20220401102507534.png" alt="image-20220401102507534" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401102507534.png" alt="image-20220401102507534" style="zoom:80%;" />
 
 然后它就会开始执行：观察他的执行过程，
 
-<img src="images/image-20220401103004925.png" alt="image-20220401103004925" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103004925.png" alt="image-20220401103004925" style="zoom:80%;" />
 
 欸，它怎么执行了这些sql语句呢？？？其实是因为maven的生命周期，你看上面package撒，打包前有test，也就是执行了maven的test流程，他会把我们写的所有测试方法都执行一遍，woc，我一想那可不行啊，解决办法就是我们跳过测试流程，在maven上面这个键：
 
-<img src="images/image-20220401103309941.png" alt="image-20220401103309941" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103309941.png" alt="image-20220401103309941" style="zoom:80%;" />
 
-<img src="images/image-20220401103325786.png" alt="image-20220401103325786" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103325786.png" alt="image-20220401103325786" style="zoom:80%;" />
 
 然后我们再次执行就不会出现Test环节了。打包完成后的jar包在我们的target目录下：
 
-<img src="images/image-20220401103446024.png" alt="image-20220401103446024" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103446024.png" alt="image-20220401103446024" style="zoom:80%;" />
 
-在文件夹中打开这个目录：<img src="images/image-20220401103532061.png" alt="image-20220401103532061" style="zoom:80%;" />
+在文件夹中打开这个目录：<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103532061.png" alt="image-20220401103532061" style="zoom:80%;" />
 
 ==②：运行项目（执行启动指令）==
 
 在该目录下，打开cmd命令窗口
 
-<img src="images/image-20220401103732669.png" alt="image-20220401103732669" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103732669.png" alt="image-20220401103732669" style="zoom:80%;" />
 
 通过java来执行这个jar包，执行命令：
 
@@ -2140,11 +2144,11 @@ mvn package
 java -jar demo_ssmp-0.0.1-SNAPSHOT.jar
 ```
 
-![image-20220401103934426](images/image-20220401103934426.png)
+![image-20220401103934426](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401103934426.png)
 
 哦豁，这个不就和我们在IDEA上运行程序的结果一样的嘛，那是这个服务器已经正常启动了嘛？我们打开网页访问一下我们的资源，
 
-![image-20220401104140754](images/image-20220401104140754.png)
+![image-20220401104140754](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401104140754.png)
 
 哇塞，那就🆗了。此时我们的程序以jar包的形式，单独通过java的jdk就可以运行，不用再依赖我们的Idea工具了。OHOHOHOHOHOHOHOHOH
 
@@ -2152,13 +2156,13 @@ java -jar demo_ssmp-0.0.1-SNAPSHOT.jar
 
 为什么SpringBoot的程序这么简单就可以打包直接在jdk下运行呢？其实关键在于一个插件的使用，每个初始的springBoot都会带有这个：
 
-<img src="images/image-20220401151656600.png" alt="image-20220401151656600" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401151656600.png" alt="image-20220401151656600" style="zoom:80%;" />
 
 这个是实现的关键！！！
 
 我们打开jar包看一下，可执行行jar包目录结构：
 
-![image-20220401152225587](images/image-20220401152225587.png)
+![image-20220401152225587](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401152225587.png)
 
 从里面可以看出来：
 
@@ -2168,7 +2172,7 @@ java -jar demo_ssmp-0.0.1-SNAPSHOT.jar
 
 3. META_IMF：jar包描述文件；
 
-   在这个包里面有一个MANIFEST.MF的文件，我们同时打开两种情况下的该文件，比较内容：<img src="images/image-20220401153331929.png" alt="image-20220401153331929" style="zoom: 67%;" />
+   在这个包里面有一个MANIFEST.MF的文件，我们同时打开两种情况下的该文件，比较内容：<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401153331929.png" alt="image-20220401153331929" style="zoom: 67%;" />
 
 大文件中明显比小文件中多了几行信息，其中最后一行信息是Main-Class: org.springframework.boot.loader.<font color="#ff0000"><b>JarLauncher</b></font>。他的作用是：如果使用java -jar执行此程序包，将执行Main-Class属性配置的类，这个类恰巧就是前面看到的那个spring文件。而这个org.springframework.boot.loader.<font color="#ff0000"><b>JarLauncher</b></font>类内部要查找Start-Class属性中配置的类，并执行对应的类。这个属性在当前配置中也存在，对应的就是我们的引导类类名。
 
@@ -2182,7 +2186,7 @@ java -jar demo_ssmp-0.0.1-SNAPSHOT.jar
 
 再来看有可能出现的的报错信息：
 
-<img src="images/image-20220401153733210.png" alt="image-20220401153733210" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220401153733210.png" alt="image-20220401153733210" style="zoom: 67%;" />
 
 由于打包时没有使用那段配置，结果打包后形成了一个普通的jar包，在MANIFEST.MF文件中也就没有了Main-Class对应的属性了，所以运行时提示找不到主清单属性，这就是报错的原因。
 
@@ -2211,9 +2215,9 @@ taskkill -f -t -im "进程名称"
 
 以需要在运行时更改端口为例，jar包里面端口配置为8080，现在运行是需要改成80。
 
-<img src="images/image-20220405104613858.png" alt="image-20220405104613858" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405104613858.png" alt="image-20220405104613858" style="zoom:80%;" />
 
-<img src="images/image-20220405104349421.png" alt="image-20220405104349421" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405104349421.png" alt="image-20220405104349421" style="zoom:80%;" />
 
 办法就是在命令行启动程序时，在后面添加上对应参数就可以了。
 
@@ -2237,7 +2241,7 @@ java –jar springboot.jar –-server.port=80 --logging.level.root=debug
 
 那问题来了，那是否还有其他的配置方式呢？其实是有的，而且还不少，打开官方文档中对应的内容，就可以查看配置读取的优先顺序。地址奉上：https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config
 
-![image-20220405105038964](images/image-20220405105038964.png)
+![image-20220405105038964](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405105038964.png)
 
 我们可以看到，居然有14种配置的位置，而我们现在使用的是这里面的2个。第3条Config data说的就是使用配置文件，第11条Command line arguments说的就是使用命令行临时参数。而这14种配置的顺序就是SpringBoot加载配置的顺序，言外之意，命令行临时属性比配置文件的加载优先级高，所以这个列表上面的优先级低，下面的优先级高。其实这个东西不用背的，你就记得一点，你最终要什么效果，你自己是知道的，不管这个顺序是怎么个高低排序，开发时一定要配置成你要的顺序为准。这个顺序只是在你想不明白问题的时候帮助你分析罢了。
 
@@ -2251,21 +2255,21 @@ java –jar springboot.jar –-server.port=80 --logging.level.root=debug
 
 下面说一下开发环境中如何使用临时属性，其实就是Idea界面下如何操作了。
 
-![image-20220405110408121](images/image-20220405110408121.png)
+![image-20220405110408121](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405110408121.png)
 
 然后在程序参数那里输入临时属性：就可以成功！！！
 
-<img src="images/image-20220405110535520.png" alt="image-20220405110535520" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405110535520.png" alt="image-20220405110535520" style="zoom:80%;" />
 
 然后我们再次看向一下我们的引导类，
 
-<img src="images/image-20220405110651735.png" alt="image-20220405110651735" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405110651735.png" alt="image-20220405110651735" style="zoom:80%;" />
 
 哦豁，哇塞，不会吧，难道这个args参数就是我们的临时属性？？？答案是没错，就是这样，我们的命令行参数就是通过这个args字符串数组，给到我们的程序的，不相信的同学可以在run方法前打印一下args。
 
 那又想到了一点，如果不用这个args是不是就断开了外部手段传递临时属性的入口呢？是这样的，如果我们在run方法时不接收这个args参数，那么外部临时属性就无法进入到SpringBoot程序中了。
 
-<img src="images/image-20220405111112743.png" alt="image-20220405111112743" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405111112743.png" alt="image-20220405111112743" style="zoom:80%;" />
 
 这样做的好处是：保护我们程序的不变性，稳定性！！！
 
@@ -2283,7 +2287,7 @@ public static void main(String[] args) {
 
 springboot给配置分等级的原因：满足不同人的需求！！！一是后台开发人员，二是项目经理，三是别人公司（他们有高级机密配置）等；因为之前命令行的方式太捞了呗，显得多不专业，每次写来写去，万一改的地方特别多怎么搞！！！所以有了下面这种方式，通过配置文件覆盖的方法满足不同人的需求。
 
-<img src="images/image-20220405112745338.png" alt="image-20220405112745338" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405112745338.png" alt="image-20220405112745338" style="zoom:80%;" />
 
 **SpringBoot提供了配置文件和临时属性的方式来对程序进行配置。**前面一直说的是临时属性，这一节要说说配置文件了。其实这个配置文件我们一直在使用，只不过我们用的是SpringBoot提供的4级配置文件中的其中一个。**4个级别分别是：**
 
@@ -2314,19 +2318,19 @@ springboot给配置分等级的原因：满足不同人的需求！！！一是�
 
 **开发人员：**
 
-<img src="images/image-20220405114849188.png" alt="image-20220405114849188" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405114849188.png" alt="image-20220405114849188" style="zoom:80%;" />
 
 **项目经理：**
 
-<img src="images/image-20220405114520618.png" alt="image-20220405114520618" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405114520618.png" alt="image-20220405114520618" style="zoom:80%;" />
 
 **运维人员：**
 
-<img src="images/image-20220405114638638.png" alt="image-20220405114638638" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405114638638.png" alt="image-20220405114638638" style="zoom:80%;" />
 
 **运维经理：**
 
-<img src="images/image-20220405114809968.png" alt="image-20220405114809968" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405114809968.png" alt="image-20220405114809968" style="zoom: 67%;" />
 
 ### 5. 自定义配置文件名称
 
@@ -2336,15 +2340,15 @@ springboot给配置分等级的原因：满足不同人的需求！！！一是�
 
 **方式一：使用临时属性设置配置文件名，注意仅仅是名称，不要带扩展名**
 
-<img src="images/image-20211206105548238.png" alt="image-20211206105548238" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211206105548238.png" alt="image-20211206105548238" style="zoom:67%;" />
 
 **方式二：使用临时属性设置配置文件路径，这个是全路径名**
 
-<img src="images/image-20211206105716450.png" alt="image-20211206105716450" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211206105716450.png" alt="image-20211206105716450" style="zoom:67%;" />
 
 ​		也可以设置加载多个配置文件，顺序在后面的会覆盖前面的已有配置
 
-<img src="images/image-20211206105750285.png" alt="image-20211206105750285" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211206105750285.png" alt="image-20211206105750285" style="zoom:67%;" />
 
 ​		使用的属性一个是spring.config.name，另一个是spring.config.location，这个一定要区别清楚。
 
@@ -2358,7 +2362,7 @@ springboot给配置分等级的原因：满足不同人的需求！！！一是�
 
 ​		什么是多环境？其实就是说你的电脑上写的程序最终要放到别人的服务器上去运行。每个计算机环境不一样，这就是多环境。常见的多环境开发主要兼顾3种环境设置，开发环境——自己用的，测试环境——自己公司用的，生产环境——甲方爸爸用的。因为这是绝对不同的三台电脑，所以环境肯定有所不同，比如连接的数据库不一样，设置的访问端口不一样等等。
 
-<img src="images/image-20220405164902986.png" alt="image-20220405164902986" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405164902986.png" alt="image-20220405164902986" style="zoom: 67%;" />
 
 ### 1. YML单一文件版
 
@@ -2397,11 +2401,11 @@ server:
 
 并且打开配置文件后可以在文件左下角，看到整个配置文件被分成了几个部分：
 
-<img src="images/image-20220405170318466.png" alt="image-20220405170318466" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405170318466.png" alt="image-20220405170318466" style="zoom:67%;" />
 
 其中，这里给我们的profiles划了一个横线，意思是这种写法过时了，推荐使用新的写法，不过这个无所谓，都可以。
 
-<img src="images/image-20220405170524714.png" alt="image-20220405170524714" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405170524714.png" alt="image-20220405170524714" style="zoom:67%;" />
 
 ### 2. YML多文件版
 
@@ -2409,22 +2413,22 @@ server:
 
 实现方式是：主配置文件通过特定的文件名称来识别需要加载的配置文件；
 
-<img src="images/image-20220405174226619.png" alt="image-20220405174226619" style="zoom: 80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405174226619.png" alt="image-20220405174226619" style="zoom: 80%;" />
 
-<img src="images/image-20220405174112713.png" alt="image-20220405174112713" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405174112713.png" alt="image-20220405174112713" style="zoom:80%;" />
 
 **注意：**
 
 -  主配置文件中设置公共配置（全局）
 -  环境分类配置文件中常用于设置冲突属性（局部）
 
-<img src="images/image-20220405174331854.png" alt="image-20220405174331854" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405174331854.png" alt="image-20220405174331854" style="zoom:80%;" />
 
 ### 3. properties多文件版
 
 同前面的yml，一模一样几乎。
 
-![image-20220405174533983](images/image-20220405174533983.png)
+![image-20220405174533983](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405174533983.png)
 
 ### 4. 多环境开发独立配置文件书写技巧
 
@@ -2436,15 +2440,15 @@ server:
 
 **使用include属性在激活指定环境的情况下，同时对多个环境进行加载使其生效，多个环境间使用逗号分隔**
 
-<img src="images/image-20220405175614960.png" alt="image-20220405175614960" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405175614960.png" alt="image-20220405175614960" style="zoom:80%;" />
 
-<img src="images/image-20220405175637901.png" alt="image-20220405175637901" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405175637901.png" alt="image-20220405175637901" style="zoom:80%;" />
 
  从Spring2.4版开始使用group属性替代include属性，降低了配置书写量。
 
  使用**group属性**定义多种主环境与子环境的包含关系
 
-<img src="images/image-20220405175800318.png" alt="image-20220405175800318" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405175800318.png" alt="image-20220405175800318" style="zoom:80%;" />
 
 ### 5. 多环境开发控制
 
@@ -2459,17 +2463,17 @@ maven去控制springboot的多环境大体思想如下：
 
 **①：Maven中设置多环境属性**
 
-![image-20220405210132945](images/image-20220405210132945.png)
+![image-20220405210132945](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405210132945.png)
 
 **②：SpringBoot中引用Maven属性**
 
 哪一个profile里面设置了active为true就读取哪一个的配置信息。
 
-![image-20220405210150037](images/image-20220405210150037.png)
+![image-20220405210150037](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405210150037.png)
 
 下面是原来的写法，其实就是把这个active的取值，让maven去控制，不让我们在yml文件写而已，没有什么特殊的。上面的`@属性名@`就是读取maven中配置的属性值的语法格式。
 
-<img src="images/image-20220405210331031.png" alt="image-20220405210331031" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220405210331031.png" alt="image-20220405210331031" style="zoom:67%;" />
 
 **③：执行Maven打包指令，并在生成的boot打包文件.jar文件中查看对应信息**
 
@@ -2494,7 +2498,7 @@ maven去控制springboot的多环境大体思想如下：
 
 代码中log对象就是用来记录日志的对象，下面的log.debug，log.info这些操作就是写日志的API了。
 
-![image-20220407161806316](images/image-20220407161806316.png)
+![image-20220407161806316](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220407161806316.png)
 
 **步骤②**：设置日志输出级别；
 
@@ -2536,17 +2540,17 @@ logging:
 
 之前那样写日志存在的问题：每一个类都需要获得一个日志对象，重复代码。
 
-<img src="images/image-20220407164927806.png" alt="image-20220407164927806" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220407164927806.png" alt="image-20220407164927806" style="zoom:80%;" />
 
 使用lombok提供的注解**@Slf4j**简化开发，减少日志对象的声明操作
 
-![image-20220407165103269](images/image-20220407165103269.png)
+![image-20220407165103269](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220407165103269.png)
 
 ### 2. 日志输出格式
 
 日志已经能够记录了，但是目前记录的格式是SpringBoot给我们提供的，如果想自定义控制就需要自己设置了。先分析一下当前日志的记录格式。
 
-![image-20211206123431222](images/image-20211206123431222.png)
+![image-20211206123431222](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20211206123431222.png)
 
 - PID：进程ID，用于表明当前操作所处的进程，当多服务同时记录日志时，该值可用于协助程序员调试程序
 - 所属类/接口名：当前显示信息为SpringBoot重写后的信息，名称过长时，简化包名书写为首字母，甚至直接删除		
@@ -2575,7 +2579,7 @@ logging:
 
 然后启动我们的项目，直接在IDEA是找不到这个文件的，他在这个模块的同级目录下：
 
-<img src="images/image-20220407170823284.png" alt="image-20220407170823284" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220407170823284.png" alt="image-20220407170823284" style="zoom:80%;" />
 
 新的问题来了，难道我们项目就一直用这个文件吗？那这个文件不就越来越大呢！！！肯定是不行的，所以我们要对日志进行分开记录。通常会每天记录日志文件，同时为了便于维护，还要限制每个日志文件的大小。
 
@@ -2637,7 +2641,7 @@ logging:
 
 **步骤②**：构建项目，可以使用快捷键激活此功能
 
-![image-20220222121257218](images/image-20220222121257218.png)
+![image-20220222121257218](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220222121257218.png)
 
 ​		以上过程就实现了springboot工程的热部署，每次更改代码完，重启构建一下项目就好了。
 
@@ -2649,7 +2653,7 @@ logging:
 
 ​		打开【File】，选择【settings...】,在面板左侧的菜单中找到【Compile】选项，然后勾选【Build project automatically】，意思是自动构建项目
 
-![image-20220222123543551](images/image-20220222123543551.png)
+![image-20220222123543551](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220222123543551.png)
 
 ​		自动构建项目选项勾选后
 
@@ -2657,11 +2661,11 @@ logging:
 
 ​		使用快捷键【Ctrl】+【Alt】+【Shit】+【/】打开维护面板，选择第1项【Registry...】
 
-![image-20220222124006910](images/image-20220222124006910.png)
+![image-20220222124006910](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220222124006910.png)
 
 ​		在选项中搜索comple，然后勾选对应项即可
 
-<img src="images/image-20220222124240069.png" alt="image-20220222124240069" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220222124240069.png" alt="image-20220222124240069" style="zoom:80%;" />
 
 ​		这样程序在运行的时候就可以进行自动构建了，实现了热部署的效果。
 
@@ -2705,7 +2709,7 @@ spring:
 
 ​		如果当心配置文件层级过多导致相符覆盖最终引起配置失效，可以提高配置的层级，在更高层级中配置关闭热部署。
 
-![image-20220408103437502](images/image-20220408103437502.png)例如在启动容器前通过系统属性设置关闭热部署功能。
+![image-20220408103437502](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408103437502.png)例如在启动容器前通过系统属性设置关闭热部署功能。
 
 ```JAVA
 @SpringBootApplication
@@ -2725,13 +2729,13 @@ public class SSMPApplication {
 
 ==注意前缀是全小写的datasource, 而yml中为驼峰==
 
-<img src="images/image-20220408151534868.png" alt="image-20220408151534868" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408151534868.png" alt="image-20220408151534868" style="zoom:80%;" />
 
-<img src="images/image-20220408152631594.png" alt="image-20220408152631594" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408152631594.png" alt="image-20220408152631594" style="zoom:80%;" />
 
 运行结果：
 
-<img src="images/image-20220408151603021.png" alt="image-20220408151603021" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408151603021.png" alt="image-20220408151603021" style="zoom:80%;" />
 
 ==**@EnableConfigurationProperties**==
 
@@ -2739,17 +2743,17 @@ public class SSMPApplication {
 
 - @EnableConfigurationProperties注解可以将使用@ConfigurationProperties注解对应的类直接加入Spring容器
 
-<img src="images/image-20220408152013137.png" alt="image-20220408152013137" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408152013137.png" alt="image-20220408152013137" style="zoom:80%;" />
 
-<img src="images/image-20220408152025973.png" alt="image-20220408152025973" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408152025973.png" alt="image-20220408152025973" style="zoom:80%;" />
 
 总结一句话就是，他换了一种方式，把我们需要绑定yml对象数据的类放到spring容器里面，让这个类成为一个Bean，这样做的好处是：我们可以在引导类上直接看到，有哪些Bean的属性绑定了yml配置数据。同时使用，就会在容器里面产生两个相同的Bean。
 
-<img src="images/image-20220408152241469.png" alt="image-20220408152241469" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408152241469.png" alt="image-20220408152241469" style="zoom:80%;" />
 
 **解除使用@ConfigurationProperties注释警告**
 
-![image-20220408152326821](images/image-20220408152326821.png)
+![image-20220408152326821](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408152326821.png)
 
 直接导入一个依赖就行了，
 
@@ -2768,7 +2772,7 @@ public class SSMPApplication {
 
 springboot推荐使用烤肉串的形式，仅能使用纯小写字母、数字、中划线作为合法的字符（data-source），中划线在真正绑定时会自动去掉。但我们一般就用纯小写字母。
 
-<img src="images/image-20220408154452267.png" alt="image-20220408154452267" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408154452267.png" alt="image-20220408154452267" style="zoom:80%;" />
 
 **第二点：属性名绑定**
 
@@ -2835,13 +2839,13 @@ public class ServerConfig {
 
 两个类支持的所有单位如下：
 
-![image-20220408160220145](images/image-20220408160220145.png)
+![image-20220408160220145](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408160220145.png)
 
 ### --数据校验
 
 好了，问题又来了。
 
-<img src="images/image-20220408160412570.png" alt="image-20220408160412570" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408160412570.png" alt="image-20220408160412570" style="zoom:80%;" />
 
 我的timeout绑定的Bean属性为时间单位的分钟，但就是有的人总会写错，把这里写成非数字，因为yml目前对对象的值没有限制，例如写成abcd，那就会报错了，无法绑定。
 
@@ -2892,21 +2896,21 @@ public class ServerConfig {
 
 ​		通过设置数据格式校验，就可以有效避免非法数据加载，其实使用起来还是挺轻松的，基本上就是一个格式。当出现格式不正确时，运行就会报错，并且告诉你错误地方。
 
-<img src="images/image-20220408163702499.png" alt="image-20220408163702499" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408163702499.png" alt="image-20220408163702499" style="zoom:80%;" />
 
 最后，javase提供给我们了多少种约束规则呢，在哪里查看呢，如下：
 
-![image-20220408164123476](images/image-20220408164123476.png)
+![image-20220408164123476](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408164123476.png)
 
 然后在左边就可以看到全部了。这里都是JSR303规范的API
 
-<img src="images/image-20220408164154848.png" alt="image-20220408164154848" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408164154848.png" alt="image-20220408164154848" style="zoom:80%;" />
 
 还有一部分规范的API，是hibernate框架提供给我们的，
 
-<img src="images/image-20220408165959434.png" alt="image-20220408165959434" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408165959434.png" alt="image-20220408165959434" style="zoom: 67%;" />
 
-<img src="images/image-20220408170029797.png" alt="image-20220408170029797" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408170029797.png" alt="image-20220408170029797" style="zoom:80%;" />
 
 ### --数据类型转换
 
@@ -2933,7 +2937,7 @@ spring:
 
 ​		之前在基础篇讲属性注入时，提到过类型相关的知识，在整数相关知识中有这么一句话，**支持二进制，八进制，十六进制**
 
-<img src="images/image-20220222225748370.png" alt="image-20220222225748370" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220222225748370.png" alt="image-20220222225748370" style="zoom:80%;" />
 
 而八进制的要求就是： ” 数字0开头，后面跟0—7“，十六进制的要求：”数字0x开头，后面跟0-9，a-f “	。
 
@@ -2973,7 +2977,7 @@ env:
 
 点击进去这个@springbootest注解，内部有几个属性，其中properties和args就是给我们添加临时配置属性滴
 
-<img src="images/image-20220408193121668.png" alt="image-20220408193121668" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408193121668.png" alt="image-20220408193121668" style="zoom:80%;" />
 
 **properties属性：**
 
@@ -2996,7 +3000,7 @@ public class PropertiesAndArgsTest {
 }
 ```
 
-<img src="images/image-20220408193515640.png" alt="image-20220408193515640" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220408193515640.png" alt="image-20220408193515640" style="zoom:80%;" />
 
 **args属性：**
 
@@ -3033,7 +3037,7 @@ public class PropertiesAndArgsTest {
 
 **步骤①**：在测试包test中创建专用的测试环境配置类
 
-<img src="images/image-20220413171545308.png" alt="image-20220413171545308" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413171545308.png" alt="image-20220413171545308" style="zoom:80%;" />
 
 下面这种方式很聪明哦，给容器里面加一个String类的Bean，用于测试一下
 
@@ -3076,17 +3080,17 @@ public class ConfigurationTest {
 
 之前我们写的一般测试类是这样的，然后他的运行结果是这样的：
 
-![image-20220413194314894](images/image-20220413194314894.png)
+![image-20220413194314894](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413194314894.png)
 
 很明显，这没有启动Web服务器啊，因为他连端口号什么的都没有对不对，所以说要另外加一些配置信息，才能让测试类也可以启动Web服务器。
 
 点进去@SpringBootTest注解，查看一下他里面的属性，我们会发现有一个Web的环境属性，那就是他了。
 
-<img src="images/image-20220413194540165.png" alt="image-20220413194540165" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413194540165.png" alt="image-20220413194540165" style="zoom:80%;" />
 
 直接在注解后面加上该属性的配置，如下：一共有四个配置信息，
 
-<img src="images/image-20220413194733514.png" alt="image-20220413194733514" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413194733514.png" alt="image-20220413194733514" style="zoom:80%;" />
 
 - MOCK：根据当前设置确认是否启动web环境，例如使用了Servlet的API就启动web环境，属于适配性的配置
 - **DEFINED_PORT**：使用自定义的端口作为web服务器端口
@@ -3095,7 +3099,7 @@ public class ConfigurationTest {
 
 接下来，再次启动测试类，就有了：
 
-<img src="images/image-20220413194920469.png" alt="image-20220413194920469" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413194920469.png" alt="image-20220413194920469" style="zoom:80%;" />
 
 ==**第二步：测试类中发送请求**==
 
@@ -3126,7 +3130,7 @@ public class WebTest {
 
 执行测试程序，现在就可以正常的发送/books对应的请求了，注意访问路径不要写http://localhost:8080/books，因为前面的服务器IP地址和端口使用的是当前虚拟的web环境，无需指定，仅指定请求的具体路径即可。
 
-![image-20220413201404161](images/image-20220413201404161.png)
+![image-20220413201404161](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413201404161.png)
 
 ==**第三步：验证表现层接口结果**==
 
@@ -3157,11 +3161,11 @@ public class WebTest {
 
    我们模拟一下，出现错误的情况，例如把路径改成books111，然后我们在控制台可以看到很多信息：
 
-   <img src="images/image-20220413202713858.png" alt="image-20220413202713858" style="zoom:80%;" />
+   <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413202713858.png" alt="image-20220413202713858" style="zoom:80%;" />
 
 ​	除此之外，前面我们还可以看到请求信息和响应信息，
 
-<img src="images/image-20220413202808385.png" alt="image-20220413202808385" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220413202808385.png" alt="image-20220413202808385" style="zoom:80%;" />
 
 2. **响应体匹配（非json数据格式）**
 
@@ -3188,11 +3192,11 @@ public class WebTest {
 
 即返回值为对象或者集合。会自动转换成json串。我们先把表现层的返回值改成如下：
 
-<img src="images/image-20220416112043245.png" alt="image-20220416112043245" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220416112043245.png" alt="image-20220416112043245" style="zoom:80%;" />
 
 然后启动服务器，在浏览器中可以看到响应结果：
 
-<img src="images/image-20220416112329318.png" alt="image-20220416112329318" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220416112329318.png" alt="image-20220416112329318" style="zoom:80%;" />
 
 然后把这个json串复制一下哦。因为后面要用的，不然得自己写很麻烦。只用改一个地方就好了，用到得函数是.json，然后在参数双引号里面，直接复制之前得json串即可。
 
@@ -3215,7 +3219,7 @@ public class WebTest {
 
 做到这里，相信大家已经发现，其实匹配结果得写法都差不多，就我们响应数据里面有什么东西，我们就可以去匹配什么东西，很简单得，那我们再写一个简单的匹配，先看看响应数据还有什么内容：
 
-<img src="images/image-20220416113233769.png" alt="image-20220416113233769" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220416113233769.png" alt="image-20220416113233769" style="zoom:80%;" />
 
 那我们就匹配一下这个Header吧，响应头。
 
@@ -3288,7 +3292,7 @@ public class DaoTest {
 
 如果想要在测试用例里面提交事务，再加上一个注解@RollBack(false) 即可。
 
-<img src="images/image-20220419183449796.png" alt="image-20220419183449796" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220419183449796.png" alt="image-20220419183449796" style="zoom:80%;" />
 
 ### --产生随机的测试数据
 
@@ -3337,7 +3341,7 @@ public class DaoTest {
 
 对于随机值的产生，还有一些小的限定规则，比如产生的数值性数据可以设置范围等，具体如下：
 
-<img src="images/image-20220223135454862.png" alt="image-20220223135454862" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220223135454862.png" alt="image-20220223135454862" style="zoom:80%;" />
 
 - ${random.int}表示随机整数
 - ${random.int(10)}表示10以内的随机数
@@ -3401,7 +3405,7 @@ spring:
 
 启动服务器运行时可以在日志中看到对应的数据源初始化信息，具体如下：
 
-<img src="images/image-20220419191550020.png" alt="image-20220419191550020" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220419191550020.png" alt="image-20220419191550020" style="zoom:80%;" />
 
 那当我们不使用这个数据源时，会是什么情况呢，其实之前讲过一点点，springboot是内嵌了默认的数据源技术的，就和内嵌tomcat一样。
 
@@ -3440,7 +3444,7 @@ spring:
 
 因为不同的数据库，他们的url的写法完全不一样，所以sp可以监测到，避免了我们驱动类写错的情况。
 
-<img src="images/image-20220420164825722.png" alt="image-20220420164825722" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220420164825722.png" alt="image-20220420164825722" style="zoom:80%;" />
 
 #### --持久化技术
 
@@ -3582,9 +3586,9 @@ spring:
 
 启动Web服务，在控制台我们可以看到Hibernate数据库启动了，打开网页访问localhost/h2即可看到可视化信息如下：
 
-​		<img src="images/image-20220420163316434.png" alt="image-20220420163316434" style="zoom:80%;" />
+​		<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220420163316434.png" alt="image-20220420163316434" style="zoom:80%;" />
 
-密码可以自己设置，我们设置123456。现在点击连接会显示，因为第一次他配置信息未初始化，并没有创建一个名字为test的数据库，该数据库会放在c盘user目录下的。![image-20220420163329968](images/image-20220420163329968.png)
+密码可以自己设置，我们设置123456。现在点击连接会显示，因为第一次他配置信息未初始化，并没有创建一个名字为test的数据库，该数据库会放在c盘user目录下的。![image-20220420163329968](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220420163329968.png)
 
 我们需要先配置下列数据源信息，就把网页上面的复制下来，一模一样，启动程序运行后再次访问/h2路径就可以正常访问了，==下次启动就不需要在配置这些datasource的信息==
 
@@ -3604,7 +3608,7 @@ spring:
     password: 123456
 ```
 
-<img src="images/image-20220420163726315.png" alt="image-20220420163726315" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220420163726315.png" alt="image-20220420163726315" style="zoom: 50%;" />
 
 该数据库的创建表的sql语句：
 
@@ -3616,7 +3620,7 @@ spring:
 
 #### --总结
 
-<img src="images/image-20220420165016622.png" alt="image-20220420165016622" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220420165016622.png" alt="image-20220420165016622" style="zoom:80%;" />
 
 ### 4.2 NoSQL解决方案
 
@@ -3643,7 +3647,7 @@ Redis重点关注数据存储格式，value可以存多种类型的数据格式�
 
 打开Redis的安装目录，我们只要关心两个主要的文件，一个是.conf的，一个是.exe的。
 
-<img src="images/image-20220502152146450.png" alt="image-20220502152146450" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220502152146450.png" alt="image-20220502152146450" style="zoom:80%;" />
 
 启动服务的命令：
 
@@ -3714,7 +3718,7 @@ hget a a2			#得到aa2
 
 ​		上述坐标可以在创建模块的时候通过勾选的形式进行选择，归属NoSQL分类中
 
-<img src="images/image-20220224101142220.png" alt="image-20220224101142220" style="zoom:50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224101142220.png" alt="image-20220224101142220" style="zoom:50%;" />
 
 **步骤②**：进行服务器基础配置
 
@@ -3733,7 +3737,7 @@ spring:
 
 我们点进去看一下这个类，发现它支持泛型，就是说我们的键值对两个的类型，一般我们不指定，就是object类。
 
-<img src="images/image-20220502162232335.png" alt="image-20220502162232335" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220502162232335.png" alt="image-20220502162232335" style="zoom:80%;" />
 
 ```java
 @SpringBootTest
@@ -3768,7 +3772,7 @@ class Springboot16RedisApplicationTests {
 
 ​		在操作redis时，需要先确认操作何种数据，根据数据种类得到操作接口。例如使用opsForValue()获取string类型的数据操作接口，使用opsForHash()获取hash类型的数据操作接口，剩下的就是调用对应api操作了。各种类型的数据操作接口如下：
 
-<img src="images/image-20220224103104908.png" alt="image-20220224103104908" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224103104908.png" alt="image-20220224103104908" style="zoom:80%;" />
 
 **StringRedisTemplate**
 
@@ -3795,7 +3799,7 @@ public class StringRedisTemplateTest {
 
 jedis是传统的一个操作Redis的客户端，我们springboot也整合了，可以使用，只是说默认提供的是lettucs客户端技术。
 
-<img src="images/image-20220502163258360.png" alt="image-20220502163258360" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220502163258360.png" alt="image-20220502163258360" style="zoom:80%;" />
 
 **步骤①**：导入jedis坐标
 
@@ -3851,7 +3855,7 @@ MongoDB是一个开源、高性能、**无模式**的**文档型**数据库，�
 
 已经了解了这几种数据库，我们先看一下各类型数据库的使用场景：
 
-<img src="images/image-20220502170058836.png" alt="image-20220502170058836" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220502170058836.png" alt="image-20220502170058836" style="zoom:80%;" />
 
 ##### 安装
 
@@ -3861,15 +3865,15 @@ MongoDB是一个开源、高性能、**无模式**的**文档型**数据库，�
 
 ​		解压缩完毕后会得到如下文件，其中bin目录包含了所有mongodb的所有可执行命令
 
-<img src="images/image-20220503111058845.png" alt="image-20220503111058845" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503111058845.png" alt="image-20220503111058845" style="zoom:80%;" />
 
 ​		mongodb在运行时需要指定一个数据存储的目录，所以创建一个数据存储目录，此处创建data的目录用来存储数据，然后data下创建一个db用来放数据库信息，具体如下：
 
-<img src="images/image-20220503111215555.png" alt="image-20220503111215555" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503111215555.png" alt="image-20220503111215555" style="zoom:80%;" />
 
 如果在安装的过程中出现了如下警告信息，就是告诉你，你当前的操作系统缺少了一些系统文件，这个不用担心。
 
-<img src="images/image-20220503111245584.png" alt="image-20220503111245584" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503111245584.png" alt="image-20220503111245584" style="zoom:67%;" />
 
 根据下列方案即可解决，在浏览器中搜索提示缺少的名称对应的文件，并下载，将下载的文件拷贝到windows安装目录的system32目录下，然后在命令行中执行regsvr32命令注册此文件。根据下载的文件名不同，执行命令前更改对应名称。               
 
@@ -3901,39 +3905,39 @@ MongoDB虽然是一款数据库，但是它的操作并不是使用SQL语句进�
 
 同类型的软件较多，本次安装的软件时Robo3t，Robot3t是一款绿色软件，无需安装，解压缩即可。解压缩完毕后进入安装目录双击robot3t.exe即可使用。
 
-<img src="images/image-20220224114911573.png" alt="image-20220224114911573" style="zoom: 33%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224114911573.png" alt="image-20220224114911573" style="zoom: 33%;" />
 
 ​		打开软件首先要连接MongoDB服务器，选择【File】菜单，选择【Connect...】
 
-![image-20220224115202422](images/image-20220224115202422.png)
+![image-20220224115202422](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224115202422.png)
 
 ​		进入连接管理界面后，选择左上角的【Create】链接，创建新的连接设置
 
-<img src="images/image-20220224115254200.png" alt="image-20220224115254200" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224115254200.png" alt="image-20220224115254200" style="zoom:80%;" />
 
 ​		如果输入设置值即可连接（默认不修改即可连接本机27017端口），进行Test。
 
-![image-20220224115300266](images/image-20220224115300266.png)
+![image-20220224115300266](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224115300266.png)
 
 **创建数据库**
 
-<img src="images/image-20220503114021185.png" alt="image-20220503114021185" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503114021185.png" alt="image-20220503114021185" style="zoom:80%;" />
 
 **创建集合**
 
 在Collections上使用右键创建，输入集合名称即可，集合等同于数据库中的表的作用
 
-<img src="images/image-20220503114054757.png" alt="image-20220503114054757" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503114054757.png" alt="image-20220503114054757" style="zoom:67%;" />
 
 **增删改文档：**
 
 文档是一种类似json格式的数据，初学者可以先把数据理解为就是json数据）	
 
-<img src="images/image-20220503114203510.png" alt="image-20220503114203510" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503114203510.png" alt="image-20220503114203510" style="zoom:80%;" />
 
 **查询文档：**
 
-<img src="images/image-20220503114237886.png" alt="image-20220503114237886" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503114237886.png" alt="image-20220503114237886" style="zoom:80%;" />
 
 ​		新增文档：	
 
@@ -3992,7 +3996,7 @@ db.集合名称.update(条件，{操作种类:{文档}})
 
 上述坐标也可以在创建模块的时候通过勾选的形式进行选择，同样归属NoSQL分类中。
 
-<img src="images/image-20220224120721626.png" alt="image-20220224120721626" style="zoom: 67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220224120721626.png" alt="image-20220224120721626" style="zoom: 67%;" />
 
 **步骤②**：进行基础配置。
 
@@ -4073,7 +4077,7 @@ ES（Elasticsearch）是一个分布式全文搜索引擎，重点是全文搜�
 
 ​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件
 
-![image-20220225132756400](images/image-20220225132756400.png)
+![image-20220225132756400](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220225132756400.png)
 
 - bin目录：包含所有的可执行命令
 - config目录：包含ES服务器使用的配置文件
@@ -4087,15 +4091,15 @@ ES（Elasticsearch）是一个分布式全文搜索引擎，重点是全文搜�
 
 双击即可启动ES服务器，默认服务端口9200。通过浏览器访问http://localhost:9200看到如下信息视为ES服务器正常启动。
 
-<img src="images/image-20220503152001828.png" alt="image-20220503152001828" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503152001828.png" alt="image-20220503152001828" style="zoom:67%;" />
 
-<img src="images/image-20220503153023953.png" alt="image-20220503153023953" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503153023953.png" alt="image-20220503153023953" style="zoom:67%;" />
 
 可能出现的问题：
 
 1. 开启了ssl认证。
 
-   ![image-20220503152909902](images/image-20220503152909902.png)
+   ![image-20220503152909902](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220503152909902.png)
 
 解决：在  ES/config/[elasticsearch](https://so.csdn.net/so/search?q=elasticsearch&spm=1001.2101.3001.7020).yml  文件中把`xpack.security.http.ssl:enabled`设置成`false`即可
 
@@ -4119,7 +4123,7 @@ PUT请求		http://localhost:9200/books
 
 发送请求后，看到如下信息即索引创建成功.
 
-<img src="images/image-20220504142911399.png" alt="image-20220504142911399" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504142911399.png" alt="image-20220504142911399" style="zoom:80%;" />
 
 注意索引只能创建一个哦，是不能重复的。假如再次发送这个PUT就会报错。
 
@@ -4131,7 +4135,7 @@ PUT请求		http://localhost:9200/books
 
   查询索引得到索引相关信息，如下
 
-  <img src="images/image-20220504143132728.png" alt="image-20220504143132728" style="zoom:80%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504143132728.png" alt="image-20220504143132728" style="zoom:80%;" />
 
   如果查询了不存在的索引，会返回错误信息，status：404
 
@@ -4143,7 +4147,7 @@ PUT请求		http://localhost:9200/books
 
   删除所有后，给出删除结果，重复删除就会报错
 
-  <img src="images/image-20220504143210882.png" alt="image-20220504143210882" style="zoom:80%;" />
+  <img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504143210882.png" alt="image-20220504143210882" style="zoom:80%;" />
 
 **第一步二：创建索引，同时指定分词器**
 
@@ -4151,19 +4155,19 @@ PUT请求		http://localhost:9200/books
 
 分词器下载后解压到ES安装目录的plugins目录中即可，安装分词器后需要重新启动ES服务器。
 
-<img src="images/image-20220504143805915.png" alt="image-20220504143805915" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504143805915.png" alt="image-20220504143805915" style="zoom:80%;" />
 
 可能遇到的问题：ES服务器启动失败了，如下：
 
-<img src="images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0ZIbGFuZw==,size_16,color_FFFFFF,t_70.png" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0ZIbGFuZw==,size_16,color_FFFFFF,t_70.png" style="zoom: 50%;" />
 
 原因在于IK的配置文件里面，打开他的配置文件
 
-<img src="images/image-20220504144424396.png" alt="image-20220504144424396" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504144424396.png" alt="image-20220504144424396" style="zoom:80%;" />
 
 我们会发现，es的版本和我安装的版本不一样的，因为我安装的IK是8.1.2的，它并不知道我本地安装的ES会是什么版本的，所以它默认的ES版本就是8.1.2，可惜我的ES是8.1.3版本的，改一下就好了
 
-<img src="images/image-20220504144503829.png" alt="image-20220504144503829" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504144503829.png" alt="image-20220504144503829" style="zoom:67%;" />
 
 ```json
 PUT请求		http://localhost:9200/books
@@ -4200,7 +4204,7 @@ PUT请求		http://localhost:9200/books
 
 创建完毕后返回结果和不使用分词器创建索引的结果是一样的，此时可以通过查看索引信息观察到添加的请求参数mappings已经进入到了索引属性中，
 
-<img src="images/image-20220504153803055.png" alt="image-20220504153803055" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504153803055.png" alt="image-20220504153803055" style="zoom:80%;" />
 
 目前我们已经有了索引了，但是索引中还没有数据，所以要先添加数据，==ES中称数据为文档==，下面进行文档操作。
 
@@ -4270,11 +4274,11 @@ PUT请求		http://localhost:9200/books
 
 整合前，我们先建立了一个简单的工程环境，如下：
 
-<img src="images/image-20220504164748427.png" alt="image-20220504164748427" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504164748427.png" alt="image-20220504164748427" style="zoom:67%;" />
 
 用到mysql、druid、mybatisplus、lombok四个技术，做对MySQL数据的简单操作。
 
-<img src="images/image-20220504164933594.png" alt="image-20220504164933594" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504164933594.png" alt="image-20220504164933594" style="zoom:80%;" />
 
 下面就开始springboot整合ES，操作步骤如下：
 
@@ -4318,7 +4322,7 @@ class DemoEsApplicationTests {
 
 然后我们用Apipost查询一下，看有没有成功。
 
-<img src="images/image-20220504203709168.png" alt="image-20220504203709168" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220504203709168.png" alt="image-20220504203709168" style="zoom:67%;" />
 
 **创建索引（IK分词器）**：先把前面那个没有设置分词器的books索引删除
 
@@ -4442,13 +4446,13 @@ springboot整合ES的操作到这里就说完了，与前期进行springboot整�
 
 企业级应用主要作用是信息处理，当需要读取数据时，由于受限于数据库的访问效率，导致整体系统性能偏低。
 
-<img src="images/image-20220226154148303.png" alt="image-20220226154148303" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226154148303.png" alt="image-20220226154148303" style="zoom:67%;" />
 
 ​									        应用程序直接与数据库打交道，访问效率低
 
 ​		为了改善上述现象，开发者通常会在应用程序与数据库之间建立一种临时的数据存储机制，该区域中的数据在内存中保存，读写速度较快，可以有效解决数据库访问效率低下的问题。这一块临时存储数据的区域就是缓存。
 
-<img src="images/image-20220226154233010.png" alt="image-20220226154233010" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226154233010.png" alt="image-20220226154233010" style="zoom:67%;" />
 
 ​				使用缓存，应用程序与缓存打交道，缓存与数据库打交道，访问效率提高
 
@@ -4504,11 +4508,11 @@ public class BookServiceImpl implements BookService {
 
 这个是后面缓存技术讲解的最初案例，实际开发中大家可能都接触过使用Redis作为缓存是较多的，上面SP的内置缓存性能一般，SP考虑到了这一点，他很聪明，就和java里面的jdbc一样，SP提供了接口，方便企业自由选择使用的缓存技术。
 
-<img src="images/image-20220505210923459.png" alt="image-20220505210923459" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220505210923459.png" alt="image-20220505210923459" style="zoom:80%;" />
 
 **后面介绍整合几种常用的技术，手机验证码案例原始是内置解决方案（采用的是内存级缓存），我们会一一进行技术更换，使用专业的缓存技术商提供的，从中可以看到SP整合这些技术的方便之处。**
 
-<img src="images/image-20220505211201066.png" alt="image-20220505211201066" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220505211201066.png" alt="image-20220505211201066" style="zoom:80%;" />
 
 **步骤①**：导入springboot提供的缓存技术对应的starter
 
@@ -4542,7 +4546,7 @@ localhost:80/sms?tele=13973034756
 
 需求二：后端接收前端发送的手机号以及人工输入的验证码，返回前端验证结果。这里有两个以上参数，所以我们前端采用请求体json串的方式，后端采用@RequestBody+实体类属性接收。
 
-<img src="images/image-20220506182030676.png" alt="image-20220506182030676" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220506182030676.png" alt="image-20220506182030676" style="zoom:80%;" />
 
 ```java
 // Controller
@@ -4659,7 +4663,7 @@ spring:
 
 由于ehcache的配置有独立的配置文件格式，因此还需要指定ehcache的配置文件，以便于读取相应配置。
 
-<img src="images/image-20220506202818842.png" alt="image-20220506202818842" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220506202818842.png" alt="image-20220506202818842" style="zoom:80%;" />
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4700,7 +4704,7 @@ spring:
 
 注意前面的案例中，设置了数据保存缓存命名空间是smCode。在企业开发过程中，通过设置不同名称的cache来设定不同的缓存策略，应用于不同的缓存数据。
 
-<img src="images/image-20220506202925233.png" alt="image-20220506202925233" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220506202925233.png" alt="image-20220506202925233" style="zoom:80%;" />
 
 真的是太简单了，导入对应的技术，配置一下使用该技术，没得了。就和jdbc的设计方式一模一样（统一接口，供应商只需要做实现），很强，好吧。
 
@@ -4708,7 +4712,7 @@ spring:
 
 知识加油站：介绍一下上面ehcahce里面那个`<!-- memoryStoreEvictionPolicy：缓存清除策略-->`淘汰策略。
 
-<img src="images/image-20220506203903924.png" alt="image-20220506203903924" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220506203903924.png" alt="image-20220506203903924" style="zoom:80%;" />
 
 
 
@@ -4756,7 +4760,7 @@ spring:
 
 默认情况下，我们在redis里面存的key是下面这个，`@Cacheable(value = "smCode", key = "#tele")`
 
-<img src="images/image-20220506222307231.png" alt="image-20220506222307231" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220506222307231.png" alt="image-20220506222307231" style="zoom:80%;" />
 
 假如设置`use-key-prefix: false`，缓存空间key——`13973034756`，且`key-prefix: sms_` 无效
 
@@ -4776,15 +4780,15 @@ windows版安装包下载地址：https://www.runoob.com/memcached/window-instal
 
 下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件
 
-![image-20220226174957040](images/image-20220226174957040.png)
+![image-20220226174957040](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226174957040.png)
 
 可执行文件只有一个memcached.exe，使用该文件可以将memcached作为系统服务启动，执行此文件时会出现报错信息，如下：
 
-<img src="images/image-20220226175141986.png" alt="image-20220226175141986" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226175141986.png" alt="image-20220226175141986" style="zoom:80%;" />
 
 ​		此处出现问题的原因是注册系统服务时需要使用管理员权限，当前账号权限不足导致安装服务失败，切换管理员账号权限启动命令行
 
-<img src="images/image-20220226175302903.png" alt="image-20220226175302903" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226175302903.png" alt="image-20220226175302903" style="zoom:80%;" />
 
 ​		然后再次执行安装服务的命令即可，如下：
 
@@ -4801,13 +4805,13 @@ memcached.exe -d stop		# 停止服务
 
 ​		也可以在任务管理器中进行服务状态的切换
 
-<img src="images/image-20220226175441675.png" alt="image-20220226175441675" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220226175441675.png" alt="image-20220226175441675" style="zoom:67%;" />
 
 ##### **实现**
 
 由于memcached未被springboot收录为缓存解决方案(未被整合 ），因此使用memcached需要通过手工硬编码的方式来使用，于是前面的套路都不适用了，需要自己写了。
 
-<img src="images/image-20220507103312367.png" alt="image-20220507103312367" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220507103312367.png" alt="image-20220507103312367" style="zoom:80%;" />
 
 **步骤①**：导入xmemcached的坐标
 
@@ -4936,7 +4940,7 @@ public class XMemcachedConfig {
 
 做之前要先明确一下，jetcache并不是随便拿两个缓存都能拼到一起去的，是有支持范围的，如下：
 
-<img src="images/image-20220507162634485.png" alt="image-20220507162634485" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220507162634485.png" alt="image-20220507162634485" style="zoom:80%;" />
 
 我们下面以LinkedHashMap+Redis的方案实现本地与远程缓存方案同时使用。
 
@@ -5024,7 +5028,7 @@ public class SMSCodeServiceImpl implements SMSCodeService {
 
 在redis里面存储的key名如下：由区域名+缓存空间名+存储的key名组成。
 
-<img src="images/image-20220507181346797.png" alt="image-20220507181346797" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220507181346797.png" alt="image-20220507181346797" style="zoom:80%;" />
 
 ##### 纯本地方案
 
@@ -5061,7 +5065,7 @@ private Cache<String,String> jetCache;
 
 默认是选择的Remote，所以前面我们使用远程缓存时，没有加这个参数。
 
-<img src="images/image-20220508133608475.png" alt="image-20220508133608475" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220508133608475.png" alt="image-20220508133608475" style="zoom:80%;" />
 
 ##### 本地+远程
 
@@ -5079,9 +5083,9 @@ public class SMSCodeServiceImpl implements SMSCodeService {
 
 前面我们对jetcache的本地、远程的缓存配置，都是写的必须要有的，否则就会出错，当然还有很多其他的配置，如下：
 
-<img src="images/image-20220508134517125.png" alt="image-20220508134517125" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220508134517125.png" alt="image-20220508134517125" style="zoom:80%;" />
 
-<img src="images/image-20220508134533218.png" alt="image-20220508134533218" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220508134533218.png" alt="image-20220508134533218" style="zoom:80%;" />
 
 ##### 方法缓存
 
@@ -5120,7 +5124,7 @@ jetcache:
 
 注意，为了实现Object类型的值进出redis，需要保障进出redis的Object类型的数据必须实现序列化接口。
 
-<img src="images/image-20220508150211139.png" alt="image-20220508150211139" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220508150211139.png" alt="image-20220508150211139" style="zoom:80%;" />
 
 **步骤③**：启用方法缓存.
 
@@ -5252,7 +5256,7 @@ j2cache:
 
 **步骤②**：新建j2cache.properties和ehcache.xml 两个配置文件
 
-<img src="images/image-20220508155741837.png" alt="image-20220508155741837" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220508155741837.png" alt="image-20220508155741837" style="zoom:80%;" />
 
 **j2cache.properties：**
 
@@ -5683,7 +5687,7 @@ spring:
 
 其中这个 password的获取方式如下：
 
-<img src="images/image-20220509161144129.png" alt="image-20220509161144129" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220509161144129.png" alt="image-20220509161144129" style="zoom:80%;" />
 
 **步骤③**：使用JavaMailSender接口发送邮件
 
@@ -5778,7 +5782,7 @@ public class SendMailServiceImpl2 implements SendMailService {
 
 在我们Java中，消息又是如何应用的呢？当我们浏览器发送了无数个请求到业务系统时，就会给业务系统带来巨大的压力，肯定是不行的，此时业务系统多新建了几个子业务系统，让他们来具体处理请求，当业务系统拿到这么多请求后，他就把他们以消息的形式先存起来，放到一个叫做MQ的里面，然后子业务系统再从MQ里面拿到消息，进行处理。这个MQ就是我们学习的重点——**MessageQuene。**
 
-<img src="images/image-20220916203331201.png" alt="image-20220916203331201" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916203331201.png" alt="image-20220916203331201" style="zoom:80%;" />
 
 #### Java处理消息的标准规范
 
@@ -5856,7 +5860,7 @@ Kafka，一种高吞吐量的分布式发布订阅消息系统，提供实时消
 
   由于不涉及数据读写，仅开发业务层与表现层，其中短信处理的业务代码独立开发，代码如下：
 
-<img src="images/image-20220916210810556.png" alt="image-20220916210810556" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916210810556.png" alt="image-20220916210810556" style="zoom:80%;" />
 
 **1、订单业务**
 
@@ -5988,7 +5992,7 @@ windows版安装包下载地址：[https://activemq.apache.org/components/classi
 
 下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件
 
-![image-20220228160001620](images/image-20220228160001620.png)
+![image-20220228160001620](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220228160001620.png)
 
 **启动服务器**
 
@@ -6010,11 +6014,11 @@ http://127.0.0.1:8161/
 
 ==web管理后台端口8161==，访问后可以打开ActiveMQ的管理界面，如下：
 
-<img src="images/image-20220228160844972.png" alt="image-20220228160844972" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220228160844972.png" alt="image-20220228160844972" style="zoom:67%;" />
 
 ​		首先输入访问用户名和密码，初始化用户名和密码相同，均为：**admin**，成功登录后进入管理后台界面，如下：
 
-![image-20220228161010401](images/image-20220228161010401.png)
+![image-20220228161010401](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220228161010401.png)
 
 ​		看到上述界面视为启动ActiveMQ服务成功。
 
@@ -6022,7 +6026,7 @@ http://127.0.0.1:8161/
 
 ​		在ActiveMQ启动时要占用多个端口，以下为正常启动信息：
 
-![image-20220916210147135](images/image-20220916210147135.png)
+![image-20220916210147135](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916210147135.png)
 
 ​		其中占用的端口有：**61616、5672、61613、1883、61614**，如果启动失败，请先管理对应端口即可。以下就是某个端口占用的报错信息，可以从抛出异常的位置看出，启动5672端口时端口被占用，显示java.net.BindException: Address already in use: JVM_Bind。Windows系统中终止端口运行的操作参看[【命令行启动常见问题及解决方案】](#命令行启动常见问题及解决方案)
 
@@ -6041,11 +6045,11 @@ wrapper  | <-- Wrapper Stopped
 
 我们只需要更换**MessageService**的实现类就可以了，对吧。用ActiveMQ完成这个实现类，一个是入消息队列，一个是取消息。
 
-<img src="images/image-20220916210842990.png" alt="image-20220916210842990" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916210842990.png" alt="image-20220916210842990" style="zoom:80%;" />
 
 新建一个包，放这个的实现类；
 
-<img src="images/image-20220916211302472.png" alt="image-20220916211302472" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916211302472.png" alt="image-20220916211302472" style="zoom:80%;" />
 
 做了这么多springboot整合第三方技术，已经摸到门路了，加坐标，做配置，调接口三步走。
 
@@ -6105,15 +6109,15 @@ public class MessageServiceActivemqImpl implements MessageService {
 
 **测试：**
 
-<img src="images/image-20220916215424628.png" alt="image-20220916215424628" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916215424628.png" alt="image-20220916215424628" style="zoom:67%;" />
 
-<img src="images/image-20220916215149450.png" alt="image-20220916215149450" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916215149450.png" alt="image-20220916215149450" style="zoom: 50%;" />
 
-<img src="images/image-20220916215236981.png" alt="image-20220916215236981" style="zoom: 50%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916215236981.png" alt="image-20220916215236981" style="zoom: 50%;" />
 
 **步骤④**：使用==消息监听器==在服务器启动后，监听指定位置，当消息出现后，立即消费消息！！！！！！前面我们写的接口只能为了可视化操作而言。
 
-<img src="images/image-20220916230355109.png" alt="image-20220916230355109" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916230355109.png" alt="image-20220916230355109" style="zoom:80%;" />
 
 ```JAVA
 @Component
@@ -6141,7 +6145,7 @@ spring:
 
 pub-sub-domain默认值为false，即点对点模型，修改为true后就是发布订阅模型。
 
-<img src="images/image-20220916221522705.png" alt="image-20220916221522705" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916221522705.png" alt="image-20220916221522705" style="zoom:67%;" />
 
 **总结**
 
@@ -6158,7 +6162,7 @@ pub-sub-domain默认值为false，即点对点模型，修改为true后就是发
 
 ​		下载完毕后得到tgz压缩文件，使用解压缩软件解压缩即可使用，解压后得到如下文件
 
-![image-20220228181442155](images/image-20220228181442155.png)
+![image-20220228181442155](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220228181442155.png)
 
 ​		建议使用==windows版2.8.1版本。==
 
@@ -6211,7 +6215,7 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic itheima
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic itheima --from-beginning	
 ```
 
-![image-20220916224113774](images/image-20220916224113774.png)
+![image-20220916224113774](https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916224113774.png)
 
 ##### 整合
 
@@ -6256,7 +6260,7 @@ public class MessageServiceKafkaImpl implements MessageService {
 
 **步骤④**：使用消息监听器在服务器启动后，监听指定位置，当消息出现后，立即消费消息
 
-<img src="images/image-20220916230333895.png" alt="image-20220916230333895" style="zoom:80%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/image-20220916230333895.png" alt="image-20220916230333895" style="zoom:80%;" />
 
 ```JAVA
 @Component
@@ -6307,7 +6311,7 @@ public class MessageListener {
 
 注意：连接池hikari配置不能形如下面配置，否则连接池配置不起作用：
 
-<img src="images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NjA4OTIx,size_16,color_FFFFFF,t_70.png" alt="img" style="zoom:67%;" />
+<img src="https://java-baguwen.oss-cn-chengdu.aliyuncs.com/images/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2NjA4OTIx,size_16,color_FFFFFF,t_70.png" alt="img" style="zoom:67%;" />
 
 ```yml
 server:
